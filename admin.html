@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage content management | GINOVO</title>
+  <script src="./assets/putting-mat-content-config.js?v=20260828-6"></script>
+  <script src="./assets/smartball-content-config.js?v=20260828-6"></script>
+  <script src="./assets/smartball-media-config.js?v=20260828-6"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #070c17; color: #fff; font-family: Pretendard, Arial, sans-serif; }
+    main { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 80px; }
+    h1 { margin: 0 0 12px; }
+    .notice { color: rgba(255,255,255,.62); line-height: 1.6; margin-bottom: 32px; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .card { padding: 22px; border: 1px solid rgba(255,255,255,.15); border-radius: 16px; background: rgba(255,255,255,.04); }
+    .preview { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; background: #111827; margin-bottom: 14px; }
+    label { display: block; color: #2bffe5; font-size: 13px; font-weight: 700; margin: 14px 0 6px; }
+    input[type="text"], textarea { width: 100%; padding: 11px 12px; border: 1px solid rgba(255,255,255,.18); border-radius: 8px; background: #101725; color: #fff; font: inherit; }
+    textarea { min-height: 78px; resize: vertical; }
+    input[type="file"] { width: 100%; color: rgba(255,255,255,.7); }
+    .actions { display: flex; gap: 12px; margin-top: 28px; }
+    button, a { padding: 12px 18px; border: 0; border-radius: 999px; font-weight: 700; cursor: pointer; text-decoration: none; }
+    button { background: #2bffe5; color: #071014; }
+    button.secondary, a { background: rgba(255,255,255,.1); color: #fff; }
+    #status { margin-top: 18px; color: #2bffe5; }
+    .admin-section { margin-top: 72px; padding-top: 48px; border-top: 1px solid rgba(255,255,255,.13); }
+    .smart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .smart-card { padding: 22px; border: 1px solid rgba(255,255,255,.15); border-radius: 16px; background: rgba(255,255,255,.04); }
+    .smart-card .preview { aspect-ratio: 4/3; object-fit: cover; }
+    #smart-status { margin-top: 18px; color: #2bffe5; }
+    @media (max-width: 800px) { .grid, .smart-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Slope Putting Mat product card management</h1>
+  <p class="notice">You can edit the photo and text on each card. Currently, the static site approach only applies to saved browsers.</p>
+  <form id="editor"><div class="grid" id="cards"></div>
+    <div class="actions">
+      <button type="submit">Save changes</button>
+      <button class="secondary" type="button" id="reset">Restore to default</button>
+      <a href="./putting-mat.html#comparison" target="_blank">Check page</a>
+    </div>
+    <p id="status" role="status"></p>
+  </form>
+  <section class="admin-section">
+    <h1>Smart Golf Ball Putting System Section Management</h1>
+    <p class="notice">You can edit both images and each text separately.</p>
+    <form id="smart-editor">
+      <div class="smart-grid">
+        <section class="smart-card">
+          <img class="preview" id="system-preview" alt="Putting System Image Preview">
+          <label>putting system image</label><input id="system-image" type="file" accept="image/png,image/jpeg,image/webp">
+          <label>title</label><input type="text" data-smart-field="systemTitle">
+          <label>Emphasis phrase</label><textarea data-smart-field="systemSubtitle"></textarea>
+          <label>composition phrase</label><textarea data-smart-field="systemDescription"></textarea>
+        </section>
+        <section class="smart-card">
+          <img class="preview" id="charger-preview" alt="Wireless charger image preview">
+          <label>wireless charger images</label><input id="charger-image" type="file" accept="image/png,image/jpeg,image/webp">
+          <label>title</label><input type="text" data-smart-field="chargerTitle">
+          <label>Emphasis phrase</label><textarea data-smart-field="chargerSubtitle"></textarea>
+          <label>Item 1</label><textarea data-smart-field="chargerNote1"></textarea>
+          <label>Item 2</label><textarea data-smart-field="chargerNote2"></textarea>
+        </section>
+      </div>
+      <div class="actions">
+        <button type="submit">Putting System Save</button>
+        <button class="secondary" type="button" id="smart-reset">Restore to default</button>
+        <a href="./smart-golf-ball.html" target="_blank">Check page</a>
+      </div>
+      <p id="smart-status" role="status"></p>
+    </form>
+  </section>
+  <section class="admin-section">
+    <h1>Target distance/green speed practice section management</h1>
+    <p class="notice">You can edit the section title and description, as well as the practice and analysis images at the bottom.</p>
+    <form id="distance-editor">
+      <div class="smart-card">
+        <label>representative phrase</label><textarea data-distance-field="distanceTitle"></textarea>
+        <label>Description 1</label><textarea data-distance-field="distancePoint1"></textarea>
+        <label>Description 2</label><textarea data-distance-field="distancePoint2"></textarea>
+      </div>
+      <div class="smart-grid" style="margin-top:20px">
+        <section class="smart-card">
+          <img class="preview" id="distance-practice-preview" alt="Street practice image preview">
+          <label>street practice images</label><input id="distance-practice-image" type="file" accept="image/png,image/jpeg,image/webp">
+        </section>
+        <section class="smart-card">
+          <img class="preview" id="distance-analysis-preview" alt="Analysis image preview">
+          <label>Quantitative/RBI analysis image</label><input id="distance-analysis-image" type="file" accept="image/png,image/jpeg,image/webp">
+        </section>
+      </div>
+      <div class="actions">
+        <button type="submit">Save the distance practice section</button>
+        <button class="secondary" type="button" id="distance-reset">Restore to default</button>
+        <a href="./smart-golf-ball.html" target="_blank">Check page</a>
+      </div>
+      <p id="distance-status" role="status"></p>
+    </form>
+  </section>
+</main>
+<script>
+  const cardsRoot = document.getElementById('cards');
+  const current = window.getPuttingMatComparisonContent();
+  const pendingImages = {};
+
+  current.forEach((card, index) => {
+    const article = document.createElement('section');
+    article.className = 'card';
+    article.innerHTML = `
+      <img class="preview" src="${card.image}" alt="${card.title} preview">
+      <label>Attach image</label><input type="file" accept="image/png,image/jpeg,image/webp" data-image="${index}">
+      <label>title</label><input type="text" data-field="title" value="${card.title}">
+      <label>Description</label><input type="text" data-field="subtitle" value="${card.subtitle}">
+      ${card.items.map((item, itemIndex) => `<label>Item ${itemIndex + 1}</label><input type="text" data-item="${itemIndex}" value="${item}">`).join('')}`;
+    article.querySelector('input[type="file"]').addEventListener('change', event => {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => { pendingImages[index] = reader.result; article.querySelector('.preview').src = reader.result; };
+      reader.readAsDataURL(file);
+    });
+    cardsRoot.appendChild(article);
+  });
+
+  document.getElementById('editor').addEventListener('submit', event => {
+    event.preventDefault();
+    const result = [...document.querySelectorAll('#cards .card')].map((card, index) => ({
+      image: pendingImages[index] || current[index].image,
+      title: card.querySelector('[data-field="title"]').value.trim(),
+      subtitle: card.querySelector('[data-field="subtitle"]').value.trim(),
+      items: [...card.querySelectorAll('[data-item]')].map(input => input.value.trim())
+    }));
+    try {
+      localStorage.setItem(window.PUTTING_MAT_COMPARISON_STORAGE_KEY, JSON.stringify(result));
+      document.getElementById('status').textContent = 'Saved. Select Check Page to review your changes.';
+    } catch (_) {
+      document.getElementById('status').textContent = 'The image is too large. Please try a smaller image.';
+    }
+  });
+  document.getElementById('reset').addEventListener('click', () => {
+    localStorage.removeItem(window.PUTTING_MAT_COMPARISON_STORAGE_KEY);
+    location.reload();
+  });
+
+  const smartContent = Object.assign({}, window.SMARTBALL_CONTENT);
+  const smartMedia = Object.assign({}, window.SMARTBALL_MEDIA);
+  const pendingSmartMedia = {};
+  document.querySelectorAll('[data-smart-field]').forEach(input => {
+    input.value = smartContent[input.dataset.smartField] || '';
+  });
+  document.getElementById('system-preview').src = smartMedia['putting-system-set'];
+  document.getElementById('charger-preview').src = smartMedia['wireless-charger'];
+
+  function bindSmartImage(inputId, previewId, slot) {
+    document.getElementById(inputId).addEventListener('change', event => {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        pendingSmartMedia[slot] = reader.result;
+        document.getElementById(previewId).src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+  bindSmartImage('system-image', 'system-preview', 'putting-system-set');
+  bindSmartImage('charger-image', 'charger-preview', 'wireless-charger');
+
+  document.getElementById('smart-editor').addEventListener('submit', event => {
+    event.preventDefault();
+    const nextContent = Object.assign({}, smartContent);
+    document.querySelectorAll('[data-smart-field]').forEach(input => {
+      nextContent[input.dataset.smartField] = input.value.trim();
+    });
+    const nextMedia = Object.assign({}, smartMedia, pendingSmartMedia);
+    try {
+      localStorage.setItem(window.SMARTBALL_CONTENT_STORAGE_KEY, JSON.stringify(nextContent));
+      localStorage.setItem(window.SMARTBALL_MEDIA_STORAGE_KEY, JSON.stringify(nextMedia));
+      document.getElementById('smart-status').textContent = 'Saved. Select Check Page to review your changes.';
+    } catch (_) {
+      document.getElementById('smart-status').textContent = 'The image is too large. Please try a smaller image.';
+    }
+  });
+  document.getElementById('smart-reset').addEventListener('click', () => {
+    localStorage.removeItem(window.SMARTBALL_CONTENT_STORAGE_KEY);
+    localStorage.removeItem(window.SMARTBALL_MEDIA_STORAGE_KEY);
+    location.reload();
+  });
+
+  document.querySelectorAll('[data-distance-field]').forEach(input => {
+    input.value = smartContent[input.dataset.distanceField] || '';
+  });
+  document.getElementById('distance-practice-preview').src = smartMedia['distance-practice-screen'];
+  document.getElementById('distance-analysis-preview').src = smartMedia['distance-analysis-screen'];
+  bindSmartImage('distance-practice-image', 'distance-practice-preview', 'distance-practice-screen');
+  bindSmartImage('distance-analysis-image', 'distance-analysis-preview', 'distance-analysis-screen');
+
+  document.getElementById('distance-editor').addEventListener('submit', event => {
+    event.preventDefault();
+    const nextContent = Object.assign({}, smartContent);
+    document.querySelectorAll('[data-distance-field]').forEach(input => {
+      nextContent[input.dataset.distanceField] = input.value.trim();
+    });
+    const nextMedia = Object.assign({}, smartMedia, pendingSmartMedia);
+    try {
+      localStorage.setItem(window.SMARTBALL_CONTENT_STORAGE_KEY, JSON.stringify(nextContent));
+      localStorage.setItem(window.SMARTBALL_MEDIA_STORAGE_KEY, JSON.stringify(nextMedia));
+      document.getElementById('distance-status').textContent = 'Saved. Select Check Page to review your changes.';
+    } catch (_) {
+      document.getElementById('distance-status').textContent = 'The image is too large. Please try a smaller image.';
+    }
+  });
+  document.getElementById('distance-reset').addEventListener('click', () => {
+    localStorage.removeItem(window.SMARTBALL_CONTENT_STORAGE_KEY);
+    localStorage.removeItem(window.SMARTBALL_MEDIA_STORAGE_KEY);
+    location.reload();
+  });
+</script>
+</body>
+</html>
