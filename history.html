@@ -1,7 +1,7 @@
 <!DOCTYPE html><html class="dark" lang="en" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>GINOVO | News</title>
+<title>Green Talk History | GINOVO</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
@@ -139,7 +139,7 @@
             animation: fade-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
             opacity: 0;
         }
-
+        
         .reveal-on-scroll {
             opacity: 0;
             transform: translateY(40px);
@@ -216,6 +216,36 @@
     .source-home-footer-grid { grid-template-columns: 1fr; }
   }
 </style>
+<style id="source-home-history-styles">
+  .source-home-history { padding: 120px 0; background: #070c17; color: #fff; }
+  .source-home-history-container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 80px; }
+  .source-home-history-heading { margin: 0 0 58px; }
+  .source-home-history-eyebrow { margin: 0 0 16px; color: #31e6df; font-size: 20px; font-weight: 700; text-transform: uppercase; }
+  .source-home-history-title { margin: 0; color: #fff; font-size: 36px; line-height: 1.2; font-weight: 700; }
+  .source-home-history-timeline { position: relative; width: 100%; max-width: 1024px; margin: 0 auto; }
+  .source-home-history-timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; left: 50%; width: 1px; background: rgba(49,230,223,.38); }
+  .source-home-history-row { position: relative; width: 50%; padding: 30px 48px; }
+  .source-home-history-row:nth-child(odd) { margin-left: 50%; text-align: left; }
+  .source-home-history-row:nth-child(even) { margin-left: 0; text-align: right; }
+  .source-home-history-row::before { content: ""; position: absolute; top: 38px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+  .source-home-history-row:nth-child(odd)::before { left: -8px; }
+  .source-home-history-row:nth-child(even)::before { right: -8px; }
+  .source-home-history-year { color: #31e6df; font-size: 16px; font-weight: 600; }
+  .source-home-history-row h3 { margin: 9px 0 16px; color: #fff; font-size: 20px; font-weight: 700; }
+  .source-home-history-row ul { display: grid; gap: 10px; margin: 0; padding: 0; color: #aeb4bf; list-style: none; }
+  .source-home-history-row li { display: flex; gap: 8px; font-size: 16px; line-height: 1.7; }
+  .source-home-history-row:nth-child(even) li { justify-content: flex-end; }
+  .source-home-history-row:nth-child(even) li > span:first-child { order: 2; }
+  @media (max-width: 767px) {
+    .source-home-history { padding: 80px 0; }
+    .source-home-history-container { padding: 0 24px; }
+    .source-home-history-timeline::before { left: 8px; }
+    .source-home-history-row, .source-home-history-row:nth-child(odd), .source-home-history-row:nth-child(even) { width: 100%; margin-left: 0; padding: 28px 0 28px 40px; text-align: left; }
+    .source-home-history-row:nth-child(odd)::before, .source-home-history-row:nth-child(even)::before { left: 0; right: auto; }
+    .source-home-history-row:nth-child(even) li { justify-content: flex-start; }
+    .source-home-history-row:nth-child(even) li > span:first-child { order: 0; }
+  }
+</style>
 <style id="equal-header-menu-styles">
   @media (min-width: 1024px) {
     .site-primary-menu { display: grid !important; grid-auto-flow: column; grid-auto-columns: max-content; align-items: center; column-gap: 40px; margin: 0 24px; }
@@ -288,7 +318,7 @@
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="language">language</span><span class="font-label-mono text-[10px] uppercase tracking-tighter opacity-70 mt-1">LANGUAGE</span>
 <div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100] transform translate-y-2 group-hover:translate-y-0">
 <div class="glass-card w-32 p-4 flex flex-col gap-2 bg-surface/80 backdrop-blur-md">
-<a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="https://isolmin3-cmyk.github.io/completion-report/news.html">Korean</a>
+<a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="https://isolmin3-cmyk.github.io/completion-report/index.html#history">Korean</a>
 <a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">English</a>
 </div>
 </div>
@@ -298,87 +328,68 @@
 </div>
 </nav>
 </header>
-
-<main class="pt-[80px]">
-<section class="relative min-h-[560px] flex items-center justify-center overflow-hidden bg-black">
-<img alt="Global smart golf technology exhibition and product showcase" class="absolute inset-0 w-full h-full object-cover z-0" src="news-hero-v2.png">
-<div class="absolute inset-0 bg-black/25 z-0"></div>
-<div class="relative z-10 px-8 lg:px-16 max-w-[1280px] w-full mx-auto text-center">
-<span class="text-[#31e6df] font-['Geist'] tracking-[0.2em] text-sm font-bold uppercase mb-6 block animate-fade-up" style="animation-delay: 0.05s;">NEWS</span>
-<h1 class="text-[48px] md:text-[64px] font-black text-[#FFFFFF] tracking-[-0.04em] leading-tight mb-4 animate-fade-up" style="animation-delay: 0.1s;">GINOVO News</h1>
-<p class="text-[18px] text-[#aeb4bf] max-w-2xl mx-auto font-medium tracking-wide animate-fade-up" style="animation-delay: 0.3s;">Check out press releases, brand news, and official channels all in one place.</p>
-</div>
+<main class="pt-[80px] bg-[#070c17]">
+<section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+  <img alt="GINOVO smart golf technology studio" class="absolute inset-0 w-full h-full object-cover z-0" src="company-overview-hero.png">
+  <div class="absolute inset-0 bg-black/55 z-0"></div>
+  <div class="relative z-10 text-center px-8">
+    <h1 class="text-[48px] md:text-[64px] font-black text-[#FFFFFF] tracking-[-0.04em] leading-tight mb-4 animate-fade-up" style="animation-delay: 0.1s;">History</h1>
+    <p class="text-[18px] text-[#aeb4bf] max-w-2xl mx-auto font-medium tracking-wide animate-fade-up" style="animation-delay: 0.3s;">The milestones that shaped GREEN TALK and GINOVO.</p>
+  </div>
 </section>
-
-<section class="py-32 bg-[#070c17] border-b border-white/5">
-<div class="px-8 lg:px-16 max-w-[1280px] mx-auto">
-<div class="text-center max-w-4xl mx-auto mb-16 fade-up">
-<h2 class="text-[#31e6df] tracking-[0.14em] text-sm font-medium uppercase">Global Highlights</h2>
-<p class="text-[42px] md:text-[56px] font-extrabold text-white mt-8 leading-tight">Green Talk Overseas Exhibitions</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-24">
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up">
-<img src="exhibition-british.png" alt="British Golf Show exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2026.05</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs uppercase">England</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">British Golf Show</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">GINOVO's sophisticated putting analysis data will be presented at the British Golf Show, a bridgehead for targeting the European market.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Wycombe Air Park, UK</p>
-</div>
-</article>
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up delay-100">
-<img src="exhibition-pga.jpg" alt="PGA SHOW 2026 exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2026.01</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs">January this year</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">PGA SHOW 2026</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">GINOVO's next-generation smart solution will be unveiled at the world's largest golf industry expo held in Orlando, USA.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Orlando, Florida, USA</p>
-</div>
-</article>
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up delay-200">
-<img src="exhibition-ces.jpg" alt="CES 2025 exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2025.01</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs">CES Eureka Park</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">CES 2025</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">Smart golf ball sensing technology, the pinnacle of sports technology, will be demonstrated at CES, the world's home appliance and IT fair.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Las Vegas, Nevada, USA</p>
-</div>
-</article>
-</div>
-<div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-<span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] text-[14px] font-medium uppercase mb-6 block">Official Channels</span>
-<h2 class="text-[48px] font-extrabold text-[#FFFFFF] tracking-[-0.02em] leading-tight mb-6">Official Channels</h2>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal mx-auto max-w-xl">Visit our official channels for products, videos, and exhibition updates.</p>
-</div>
-
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<a class="glass-card rounded-xl p-8 fade-up group block hover:-translate-y-1 transition-all duration-300" href="shop.html" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">shopping_bag</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">Smart Store</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Go to the GINOVO product purchase page.</p>
-</a>
-
-<a class="glass-card rounded-xl p-8 fade-up delay-100 group block hover:-translate-y-1 transition-all duration-300" href="https://www.youtube.com/@ginovo31" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">play_circle</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">YouTube</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out brand videos and product content.</p>
-</a>
-
-<a class="glass-card rounded-xl p-8 fade-up delay-200 group block hover:-translate-y-1 transition-all duration-300" href="https://www.instagram.com/ginovo31" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">photo_camera</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">Instagram</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out the latest images and news from GINOVO.</p>
-</a>
-
-<a class="glass-card rounded-xl p-8 fade-up delay-300 group block hover:-translate-y-1 transition-all duration-300" href="https://smartstore.naver.com/ginovo/shoppingstory/detail?id=5000957550&amp;page=1" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">storefront</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">GDR Exhibition</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out the GINOVO x GDR exhibition news.</p>
-</a>
-</div>
-</div>
+<section class="source-home-history" id="history">
+  <div class="source-home-history-container">
+    <div class="source-home-history-heading">
+      <p class="source-home-history-eyebrow">History</p>
+      <h1 class="source-home-history-title">Green Talk History</h1>
+    </div>
+    <div class="source-home-history-timeline">
+      <article class="source-home-history-row">
+        <div class="source-home-history-year">2026~present</div>
+        <h3>Phase 4. Global expansion and product advancement</h3>
+        <ul>
+          <li><span>·</span><span>26.01 TIPS (R&amp;D General) 2nd year</span></li>
+          <li><span>·</span><span>26.01 Obtained Japanese PSE certification for charger battery</span></li>
+          <li><span>·</span><span>26.01~05 Acquired domestic and foreign standard certification for GINOVO Smart Golf Ball GSB-V2 and wireless charger [KC / CE / FCC]</span></li>
+          <li><span>·</span><span>26.02 Acquired ISO 9001·ISO 14001 certification</span></li>
+          <li><span>·</span><span>26.02 Selected for export voucher support project</span></li>
+          <li><span>·</span><span>26.05 GINOVO Inclined Putting Mat begins selling on Amazon</span></li>
+          <li><span>·</span><span>26.07 Selected as a design-led manufacturing innovation support project</span></li>
+          <li><span>·</span><span>26.07 LIPS selection</span></li>
+          <li><span>·</span><span>26.08 GINOVO GSB-V2 launched</span></li>
+        </ul>
+      </article>
+      <article class="source-home-history-row">
+        <div class="source-home-history-year">2025</div>
+        <h3>Phase 3. Global certification and leap forward</h3>
+        <ul>
+          <li><span>·</span><span>25.04~06 Smart golf ball simultaneously acquired CE and FCC overseas certification</span></li>
+          <li><span>·</span><span>25.05 GINOVO Smart Golf Ball &amp; Long Fit Mat officially launched</span></li>
+          <li><span>·</span><span>25.06 Startup leap package project selection</span></li>
+          <li><span>·</span><span>25.07 TIPS (General R&amp;D)</span></li>
+        </ul>
+      </article>
+      <article class="source-home-history-row">
+        <div class="source-home-history-year">2024</div>
+        <h3>Phase 2. Lineup completion and market entry</h3>
+        <ul>
+          <li><span>·</span><span>23.11 GINOVO inclined putting mat launched</span></li>
+          <li><span>·</span><span>24.04 Initial startup package project selection</span></li>
+          <li><span>·</span><span>24.05 Approval of smart manufacturing support strengthening project (advancement of mass production infrastructure)</span></li>
+        </ul>
+      </article>
+      <article class="source-home-history-row">
+        <div class="source-home-history-year">2022.08~2023</div>
+        <h3>Phase 1. R&amp;D and foundation construction</h3>
+        <ul>
+          <li><span>·</span><span>22.08 Establishment of Green Talk Co., Ltd.</span></li>
+          <li><span>·</span><span>23.02 Establishment of a corporate research center and approval as a venture business</span></li>
+          <li><span>·</span><span>23.05 Regional specialized R&amp;D and smart home parts industry project approved (technology verification)</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
 </section>
-
 <section class="source-home-cta">
   <div class="source-home-cta-copy">
     <p>Beyond Tech, Into Culture: The New Standard Powered by Data</p>
@@ -386,6 +397,60 @@
   </div>
 </section>
 </main>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Respect prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (!prefersReducedMotion) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Optional: Unobserve after reveal to run once
+                    // observer.unobserve(entry.target); 
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+    } else {
+        // If reduced motion is preferred, make everything visible immediately
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            el.classList.add('is-visible');
+        });
+    }
+});
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const revealElements = document.querySelectorAll(".reveal-on-scroll");
+
+    const revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+    revealElements.forEach(function (element) {
+      revealObserver.observe(element);
+    });
+  });
+</script>
+
 <footer class="source-home-footer">
   <div class="source-home-footer-grid">
     <div>

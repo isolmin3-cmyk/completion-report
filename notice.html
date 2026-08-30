@@ -1,9 +1,9 @@
 <!DOCTYPE html><html class="dark" lang="en" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>GINOVO | News</title>
+<title>GINOVO | Notices</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800;900&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
       tailwind.config = {
@@ -129,72 +129,13 @@
         .animate-pulse-tech {
             animation: pulse-tech 2s infinite ease-in-out;
         }
-
-        /* New Animations */
         @keyframes fade-up {
-            from { opacity: 0; transform: translateY(40px); }
+            from { opacity: 0; transform: translateY(32px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fade-up {
-            animation: fade-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        .fade-up, .animate-fade-up {
             opacity: 0;
-        }
-
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0px); }
-        }
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes ken-burns {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.05); }
-        }
-        .animate-ken-burns {
-            animation: ken-burns 20s ease-out alternate infinite;
-        }
-
-        /* Tech Card Glow */
-        .tech-card {
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid transparent;
-        }
-        .tech-card:hover {
-            border-color: rgba(49, 230, 223, 0.4);
-            box-shadow: 0 0 30px rgba(49, 230, 223, 0.15);
-            transform: translateY(-4px);
-        }
-
-        /* Award Card Animation */
-        .award-card {
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s ease, box-shadow 0.4s ease;
-        }
-        .award-card:hover {
-            transform: scale(1.03);
-            border-color: rgba(49, 230, 223, 0.8);
-            box-shadow: 0 0 20px rgba(49, 230, 223, 0.2);
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .animate-fade-up, .reveal-on-scroll, .animate-float, .animate-ken-burns, .tech-card, .award-card, .glass-card {
-                animation: none !important;
-                transition: none !important;
-                opacity: 1 !important;
-                transform: none !important;
-            }
+            animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
 <style id="source-home-cta-footer-styles">
@@ -288,7 +229,7 @@
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="language">language</span><span class="font-label-mono text-[10px] uppercase tracking-tighter opacity-70 mt-1">LANGUAGE</span>
 <div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100] transform translate-y-2 group-hover:translate-y-0">
 <div class="glass-card w-32 p-4 flex flex-col gap-2 bg-surface/80 backdrop-blur-md">
-<a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="https://isolmin3-cmyk.github.io/completion-report/news.html">Korean</a>
+<a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="https://isolmin3-cmyk.github.io/completion-report/contact.html">Korean</a>
 <a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">English</a>
 </div>
 </div>
@@ -298,87 +239,98 @@
 </div>
 </nav>
 </header>
-
 <main class="pt-[80px]">
-<section class="relative min-h-[560px] flex items-center justify-center overflow-hidden bg-black">
-<img alt="Global smart golf technology exhibition and product showcase" class="absolute inset-0 w-full h-full object-cover z-0" src="news-hero-v2.png">
-<div class="absolute inset-0 bg-black/25 z-0"></div>
-<div class="relative z-10 px-8 lg:px-16 max-w-[1280px] w-full mx-auto text-center">
-<span class="text-[#31e6df] font-['Geist'] tracking-[0.2em] text-sm font-bold uppercase mb-6 block animate-fade-up" style="animation-delay: 0.05s;">NEWS</span>
-<h1 class="text-[48px] md:text-[64px] font-black text-[#FFFFFF] tracking-[-0.04em] leading-tight mb-4 animate-fade-up" style="animation-delay: 0.1s;">GINOVO News</h1>
-<p class="text-[18px] text-[#aeb4bf] max-w-2xl mx-auto font-medium tracking-wide animate-fade-up" style="animation-delay: 0.3s;">Check out press releases, brand news, and official channels all in one place.</p>
-</div>
+<div class="max-w-[1280px] mx-auto px-8 lg:px-16 py-12 lg:py-24">
+<!-- Header Section -->
+<section class="relative min-h-[420px] flex items-center justify-center text-center overflow-hidden mb-16">
+  <img alt="GINOVO customer support and smart golf technology studio" class="absolute inset-0 w-full h-full object-cover z-0" src="contact-us-hero.png">
+  <div class="absolute inset-0 bg-black/30 z-0"></div>
+  <div class="relative z-10 px-8 max-w-[960px] mx-auto">
+    <h1 class="text-[48px] md:text-[64px] font-black text-[#FFFFFF] tracking-[-0.04em] leading-tight mb-4 animate-fade-up" style="animation-delay: 0.1s;">Notices</h1>
+    <p class="text-[18px] text-[#aeb4bf] max-w-2xl mx-auto font-medium tracking-wide animate-fade-up" style="animation-delay: 0.3s;">Stay up to date with the latest GINOVO news and announcements.</p>
+  </div>
 </section>
+<!-- Board Container -->
+<div class="w-full">
+<!-- Board Header -->
+<div class="flex items-center justify-between border-b-2 border-white/20 pb-4 mb-4">
+<h2 class="text-2xl font-bold text-white">Notices</h2>
+<button class="bg-[#31e6df] text-[#070c17] font-bold px-8 py-3 hover:brightness-110 active:scale-98 transition-all rounded-[2px] text-sm" id="notice-admin-button" type="button">
+          New Post
+        </button>
+</div>
+<!-- List Header -->
+<div class="grid grid-cols-[100px_1fr_150px] border-b border-white/10 py-4 text-sm font-bold text-white/60 text-center">
+<div class="">NO</div>
+<div class="text-left pl-4">TITLE</div>
+<div class="">DATE</div>
+</div>
+<!-- List Items -->
+<div class="flex flex-col">
+<!-- Item 1 -->
+<div class="notice-item grid grid-cols-[100px_1fr_150px] border-b border-white/10 py-5 text-on-surface hover:bg-white/5 transition-colors items-center text-center group w-full" data-notice="maintenance">
+<div class="text-white/60 text-sm">5</div>
+<button class="notice-title text-left pl-4 font-medium group-hover:text-[#31e6df] hover:underline underline-offset-4 transition-colors cursor-pointer" data-notice="maintenance" type="button">Scheduled System Maintenance (2026.06.15)</button>
+<div class="text-white/50 text-sm">2026.06.10</div>
+</div>
+<!-- Item 2 -->
+<div class="notice-item grid grid-cols-[100px_1fr_150px] border-b border-white/10 py-5 text-on-surface hover:bg-white/5 transition-colors items-center text-center group w-full" data-notice="product">
+<div class="text-white/60 text-sm">4</div>
+<button class="notice-title text-left pl-4 font-medium group-hover:text-[#31e6df] hover:underline underline-offset-4 transition-colors cursor-pointer" data-notice="product" type="button">New Product Launch ‘Smart Putting Mat Pro’</button>
+<div class="text-white/50 text-sm">2026.05.28</div>
+</div>
+<!-- Item 3 -->
+<div class="notice-item grid grid-cols-[100px_1fr_150px] border-b border-white/10 py-5 text-on-surface hover:bg-white/5 transition-colors items-center text-center group w-full" data-notice="support">
+<div class="text-white/60 text-sm">3</div>
+<button class="notice-title text-left pl-4 font-medium group-hover:text-[#31e6df] hover:underline underline-offset-4 transition-colors cursor-pointer" data-notice="support" type="button">GINOVO Customer Support Holiday Schedule</button>
+<div class="text-white/50 text-sm">2026.05.12</div>
+</div>
+<!-- Item 4 -->
 
-<section class="py-32 bg-[#070c17] border-b border-white/5">
-<div class="px-8 lg:px-16 max-w-[1280px] mx-auto">
-<div class="text-center max-w-4xl mx-auto mb-16 fade-up">
-<h2 class="text-[#31e6df] tracking-[0.14em] text-sm font-medium uppercase">Global Highlights</h2>
-<p class="text-[42px] md:text-[56px] font-extrabold text-white mt-8 leading-tight">Green Talk Overseas Exhibitions</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-24">
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up">
-<img src="exhibition-british.png" alt="British Golf Show exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2026.05</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs uppercase">England</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">British Golf Show</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">GINOVO's sophisticated putting analysis data will be presented at the British Golf Show, a bridgehead for targeting the European market.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Wycombe Air Park, UK</p>
-</div>
-</article>
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up delay-100">
-<img src="exhibition-pga.jpg" alt="PGA SHOW 2026 exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2026.01</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs">January this year</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">PGA SHOW 2026</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">GINOVO's next-generation smart solution will be unveiled at the world's largest golf industry expo held in Orlando, USA.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Orlando, Florida, USA</p>
-</div>
-</article>
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up delay-200">
-<img src="exhibition-ces.jpg" alt="CES 2025 exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2025.01</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs">CES Eureka Park</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">CES 2025</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">Smart golf ball sensing technology, the pinnacle of sports technology, will be demonstrated at CES, the world's home appliance and IT fair.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Las Vegas, Nevada, USA</p>
-</div>
-</article>
-</div>
-<div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-<span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] text-[14px] font-medium uppercase mb-6 block">Official Channels</span>
-<h2 class="text-[48px] font-extrabold text-[#FFFFFF] tracking-[-0.02em] leading-tight mb-6">Official Channels</h2>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal mx-auto max-w-xl">Visit our official channels for products, videos, and exhibition updates.</p>
-</div>
+<!-- Item 5 -->
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<a class="glass-card rounded-xl p-8 fade-up group block hover:-translate-y-1 transition-all duration-300" href="shop.html" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">shopping_bag</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">Smart Store</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Go to the GINOVO product purchase page.</p>
-</a>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-2 mt-12 mb-16">
+<button class="w-8 h-8 flex items-center justify-center text-white/50 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-[2px] bg-[#31e6df] text-[#070c17] font-bold">1</button>
 
-<a class="glass-card rounded-xl p-8 fade-up delay-100 group block hover:-translate-y-1 transition-all duration-300" href="https://www.youtube.com/@ginovo31" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">play_circle</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">YouTube</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out brand videos and product content.</p>
-</a>
 
-<a class="glass-card rounded-xl p-8 fade-up delay-200 group block hover:-translate-y-1 transition-all duration-300" href="https://www.instagram.com/ginovo31" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">photo_camera</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">Instagram</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out the latest images and news from GINOVO.</p>
-</a>
 
-<a class="glass-card rounded-xl p-8 fade-up delay-300 group block hover:-translate-y-1 transition-all duration-300" href="https://smartstore.naver.com/ginovo/shoppingstory/detail?id=5000957550&amp;page=1" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">storefront</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">GDR Exhibition</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out the GINOVO x GDR exhibition news.</p>
-</a>
+
+<button class="w-8 h-8 flex items-center justify-center text-white/50 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<!-- Search Section -->
+<div class="bg-surface-container p-6 flex justify-center border border-white/5 rounded-[4px]">
+<div class="flex w-full max-w-2xl gap-0">
+<div class="relative w-40 border-r border-white/10">
+<select class="w-full bg-surface border border-white/20 rounded-l-[4px] px-4 py-3 text-white focus:border-[#31e6df] focus:ring-1 focus:ring-[#31e6df] outline-none appearance-none cursor-pointer" id="notice-search-type">
+<option value="title">Title</option>
+<option value="content">Content</option>
+<option value="all">Title + Content</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">arrow_drop_down</span>
+</div>
+<input class="flex-1 bg-surface border-y border-white/20 px-4 py-3 text-white focus:border-[#31e6df] focus:ring-1 focus:ring-[#31e6df] outline-none" id="notice-search-input" placeholder="Search notices" type="search">
+<button class="bg-[#1a1a1a] border-y border-r border-white/20 text-white font-bold px-8 py-3 rounded-r-[4px] hover:bg-white/10 transition-colors" id="notice-search-button" type="button">
+            search
+          </button>
 </div>
 </div>
-</section>
-
+</div>
+</div>
+<div aria-hidden="true" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/75 px-5" id="notice-modal" role="dialog" aria-modal="true" aria-labelledby="notice-modal-title">
+  <article class="relative w-full max-w-3xl rounded-xl border border-white/15 bg-[#101827] p-8 md:p-12 shadow-2xl">
+    <button aria-label="Close notice" class="absolute right-5 top-5 text-white/60 hover:text-white" id="notice-modal-close" type="button"><span class="material-symbols-outlined">close</span></button>
+    <p class="mb-3 text-sm font-bold tracking-[0.16em] text-[#31e6df]" id="notice-modal-date"></p>
+    <h2 class="mb-6 pr-10 text-3xl font-bold text-white" id="notice-modal-title"></h2>
+    <div class="space-y-4 whitespace-pre-line text-[16px] leading-8 text-white/75" id="notice-modal-content"></div>
+  </article>
+</div>
 <section class="source-home-cta">
   <div class="source-home-cta-copy">
     <p>Beyond Tech, Into Culture: The New Standard Powered by Data</p>
@@ -406,5 +358,58 @@
     </div>
   </div>
 </footer>
+<script>
+  const noticePosts = {
+    maintenance: {
+      title: 'Scheduled System Maintenance (2026.06.15)',
+      date: '2026.06.10',
+      content: 'GINOVO online services will undergo scheduled maintenance on June 15, 2026, from 02:00 to 05:00 KST.\n\nDuring this period, account login and data synchronization may be temporarily unavailable. Stored putting data will remain safe and will synchronize automatically after maintenance.\n\nWe apologize for the inconvenience and appreciate your understanding.'
+    },
+    product: {
+      title: 'New Product Launch ‘Smart Putting Mat Pro’',
+      date: '2026.05.28',
+      content: 'GINOVO is pleased to introduce Smart Putting Mat Pro, designed for more precise slope training and connected practice.\n\nThe new model supports multiple putting paths, improved surface feedback, and seamless integration with the GINOVO smart golf ball experience. Product availability and ordering information will be announced soon.'
+    },
+    support: {
+      title: 'GINOVO Customer Support Holiday Schedule',
+      date: '2026.05.12',
+      content: 'The GINOVO Customer Center will be closed on public holidays and weekends.\n\nRegular support hours are Monday through Friday, 09:00–17:00 KST, with a lunch break from 12:00–13:00. You may submit an inquiry at any time, and our team will respond on the next business day.'
+    }
+  };
+  const noticeModal = document.getElementById('notice-modal');
+  const openNotice = (key) => {
+    const post = noticePosts[key];
+    if (!post) return;
+    document.getElementById('notice-modal-date').textContent = post.date;
+    document.getElementById('notice-modal-title').textContent = post.title;
+    document.getElementById('notice-modal-content').textContent = post.content;
+    noticeModal.classList.remove('hidden');
+    noticeModal.classList.add('flex');
+    noticeModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeNotice = () => {
+    noticeModal.classList.add('hidden');
+    noticeModal.classList.remove('flex');
+    noticeModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  document.querySelectorAll('.notice-title').forEach((title) => title.addEventListener('click', () => openNotice(title.dataset.notice)));
+  document.getElementById('notice-modal-close').addEventListener('click', closeNotice);
+  noticeModal.addEventListener('click', (event) => { if (event.target === noticeModal) closeNotice(); });
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeNotice(); });
+  document.getElementById('notice-admin-button').addEventListener('click', () => alert('New notices can be created by an administrator.'));
+  const runNoticeSearch = () => {
+    const query = document.getElementById('notice-search-input').value.trim().toLowerCase();
+    const type = document.getElementById('notice-search-type').value;
+    document.querySelectorAll('.notice-item').forEach((item) => {
+      const post = noticePosts[item.dataset.notice];
+      const target = type === 'title' ? post.title : type === 'content' ? post.content : `${post.title} ${post.content}`;
+      item.classList.toggle('hidden', Boolean(query) && !target.toLowerCase().includes(query));
+    });
+  };
+  document.getElementById('notice-search-button').addEventListener('click', runNoticeSearch);
+  document.getElementById('notice-search-input').addEventListener('keydown', (event) => { if (event.key === 'Enter') runNoticeSearch(); });
+</script>
 <script src="korean-translation.js"></script>
 </body></html>

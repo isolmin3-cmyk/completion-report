@@ -1,10 +1,11 @@
 <!DOCTYPE html><html class="dark" lang="en" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>GINOVO | News</title>
+<title>GINOVO | Sloping Putting Mat</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -105,7 +106,7 @@
         .glass-card {
             background: rgba(16, 24, 39, 0.7);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.11);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
         }
@@ -129,73 +130,17 @@
         .animate-pulse-tech {
             animation: pulse-tech 2s infinite ease-in-out;
         }
-
-        /* New Animations */
         @keyframes fade-up {
             from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fade-up {
+        .animate-fade-up, .fade-up {
+            opacity: 0;
             animation: fade-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            opacity: 0;
         }
-
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0px); }
-        }
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes ken-burns {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.05); }
-        }
-        .animate-ken-burns {
-            animation: ken-burns 20s ease-out alternate infinite;
-        }
-
-        /* Tech Card Glow */
-        .tech-card {
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid transparent;
-        }
-        .tech-card:hover {
-            border-color: rgba(49, 230, 223, 0.4);
-            box-shadow: 0 0 30px rgba(49, 230, 223, 0.15);
-            transform: translateY(-4px);
-        }
-
-        /* Award Card Animation */
-        .award-card {
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s ease, box-shadow 0.4s ease;
-        }
-        .award-card:hover {
-            transform: scale(1.03);
-            border-color: rgba(49, 230, 223, 0.8);
-            box-shadow: 0 0 20px rgba(49, 230, 223, 0.2);
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .animate-fade-up, .reveal-on-scroll, .animate-float, .animate-ken-burns, .tech-card, .award-card, .glass-card {
-                animation: none !important;
-                transition: none !important;
-                opacity: 1 !important;
-                transform: none !important;
-            }
-        }
+        .delay-100 { animation-delay: 0.15s; }
+        .delay-200 { animation-delay: 0.3s; }
+        .delay-300 { animation-delay: 0.45s; }
     </style>
 <style id="source-home-cta-footer-styles">
   .source-home-cta { position: relative; min-height: 520px; display: flex; align-items: center; background: url('cta-golf-2026.jpg') center/cover no-repeat; color: #fff; }
@@ -224,7 +169,7 @@
   }
 </style>
 </head>
-<body class="bg-background text-on-background selection:bg-primary/30 selection:text-white font-body-lg">
+<body class="bg-background text-on-background selection:bg-primary/30 selection:text-white font-body-lg mb-0 pb-0">
 <header class="bg-surface-container/90 backdrop-blur-xl border-b border-white/5 top-0 z-50 transition-all duration-300 fixed left-0 w-full z-[100]" id="main-header">
 <nav class="flex justify-between items-center px-8 lg:px-16 py-4 w-full max-w-[1280px] mx-auto">
 <div class="font-display-xl tracking-tighter text-on-surface shrink-0">
@@ -288,7 +233,7 @@
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="language">language</span><span class="font-label-mono text-[10px] uppercase tracking-tighter opacity-70 mt-1">LANGUAGE</span>
 <div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100] transform translate-y-2 group-hover:translate-y-0">
 <div class="glass-card w-32 p-4 flex flex-col gap-2 bg-surface/80 backdrop-blur-md">
-<a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="https://isolmin3-cmyk.github.io/completion-report/news.html">Korean</a>
+<a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="https://isolmin3-cmyk.github.io/completion-report/putting-mat.html">Korean</a>
 <a class="text-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">English</a>
 </div>
 </div>
@@ -298,87 +243,161 @@
 </div>
 </nav>
 </header>
-
-<main class="pt-[80px]">
-<section class="relative min-h-[560px] flex items-center justify-center overflow-hidden bg-black">
-<img alt="Global smart golf technology exhibition and product showcase" class="absolute inset-0 w-full h-full object-cover z-0" src="news-hero-v2.png">
-<div class="absolute inset-0 bg-black/25 z-0"></div>
+<main class="pt-[80px] mb-0 bg-background">
+<!-- 1. Hero Section -->
+<section class="relative min-h-[560px] flex items-center justify-center overflow-hidden bg-background">
+<img alt="Premium indoor slope putting mat with training path visualization" class="absolute inset-0 w-full h-full object-cover z-0" src="putting-mat-hero.png">
+<div class="absolute inset-0 bg-black/50 z-0"></div>
 <div class="relative z-10 px-8 lg:px-16 max-w-[1280px] w-full mx-auto text-center">
-<span class="text-[#31e6df] font-['Geist'] tracking-[0.2em] text-sm font-bold uppercase mb-6 block animate-fade-up" style="animation-delay: 0.05s;">NEWS</span>
-<h1 class="text-[48px] md:text-[64px] font-black text-[#FFFFFF] tracking-[-0.04em] leading-tight mb-4 animate-fade-up" style="animation-delay: 0.1s;">GINOVO News</h1>
-<p class="text-[18px] text-[#aeb4bf] max-w-2xl mx-auto font-medium tracking-wide animate-fade-up" style="animation-delay: 0.3s;">Check out press releases, brand news, and official channels all in one place.</p>
+<h1 class="text-[48px] md:text-[64px] font-black text-[#FFFFFF] tracking-[-0.04em] leading-tight mb-4 animate-fade-up" style="animation-delay: 0.1s;">GINOVO Sloping Putting Mat</h1>
+<p class="text-[18px] text-[#aeb4bf] max-w-2xl mx-auto font-medium tracking-wide animate-fade-up" style="animation-delay: 0.3s;">Premium putting training mat that embodies the slope of a real green at home</p>
 </div>
 </section>
-
-<section class="py-32 bg-[#070c17] border-b border-white/5">
+<!-- 2. Premium Package Section -->
+<!-- 3. Cinematic Image Showcase -->
+<!-- Product Insight Section -->
+<section class="hidden py-32 bg-background border-b border-white/5" aria-hidden="true">
 <div class="px-8 lg:px-16 max-w-[1280px] mx-auto">
-<div class="text-center max-w-4xl mx-auto mb-16 fade-up">
-<h2 class="text-[#31e6df] tracking-[0.14em] text-sm font-medium uppercase">Global Highlights</h2>
-<p class="text-[42px] md:text-[56px] font-extrabold text-white mt-8 leading-tight">Green Talk Overseas Exhibitions</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-24">
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up">
-<img src="exhibition-british.png" alt="British Golf Show exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2026.05</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs uppercase">England</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">British Golf Show</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">GINOVO's sophisticated putting analysis data will be presented at the British Golf Show, a bridgehead for targeting the European market.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Wycombe Air Park, UK</p>
-</div>
-</article>
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up delay-100">
-<img src="exhibition-pga.jpg" alt="PGA SHOW 2026 exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2026.01</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs">January this year</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">PGA SHOW 2026</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">GINOVO's next-generation smart solution will be unveiled at the world's largest golf industry expo held in Orlando, USA.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Orlando, Florida, USA</p>
-</div>
-</article>
-<article class="rounded-xl overflow-hidden border border-white/10 bg-[#101827] fade-up delay-200">
-<img src="exhibition-ces.jpg" alt="CES 2025 exhibition site" class="w-full aspect-[4/3] object-cover">
-<div class="p-7">
-<div class="flex items-center justify-between gap-3 text-[#31e6df] text-sm"><span>2025.01</span><span class="rounded-full border border-[#31e6df]/40 px-3 py-1 text-xs">CES Eureka Park</span></div>
-<h3 class="text-white text-2xl font-bold mt-5">CES 2025</h3>
-<p class="text-[#aeb4bf] mt-5 leading-relaxed">Smart golf ball sensing technology, the pinnacle of sports technology, will be demonstrated at CES, the world's home appliance and IT fair.</p>
-<p class="text-white/65 text-sm mt-6">⌖ Las Vegas, Nevada, USA</p>
-</div>
-</article>
-</div>
 <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-<span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] text-[14px] font-medium uppercase mb-6 block">Official Channels</span>
-<h2 class="text-[48px] font-extrabold text-[#FFFFFF] tracking-[-0.02em] leading-tight mb-6">Official Channels</h2>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal mx-auto max-w-xl">Visit our official channels for products, videos, and exhibition updates.</p>
+<span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] font-medium uppercase mb-4 block text-[11px]">Product Insight</span>
+<h2 class="text-[48px] font-extrabold text-[#FFFFFF] tracking-[-0.02em] leading-tight mb-6">Everything about Ginover Sloping Putting Mat</h2>
+<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal max-w-xl mx-auto">Watch the video to see how innovative technology can improve your performance.</p>
 </div>
-
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<a class="glass-card rounded-xl p-8 fade-up group block hover:-translate-y-1 transition-all duration-300" href="shop.html" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">shopping_bag</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">Smart Store</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Go to the GINOVO product purchase page.</p>
-</a>
-
-<a class="glass-card rounded-xl p-8 fade-up delay-100 group block hover:-translate-y-1 transition-all duration-300" href="https://www.youtube.com/@ginovo31" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">play_circle</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">YouTube</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out brand videos and product content.</p>
-</a>
-
-<a class="glass-card rounded-xl p-8 fade-up delay-200 group block hover:-translate-y-1 transition-all duration-300" href="https://www.instagram.com/ginovo31" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">photo_camera</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">Instagram</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out the latest images and news from GINOVO.</p>
-</a>
-
-<a class="glass-card rounded-xl p-8 fade-up delay-300 group block hover:-translate-y-1 transition-all duration-300" href="https://smartstore.naver.com/ginovo/shoppingstory/detail?id=5000957550&amp;page=1" target="_blank" rel="noopener noreferrer">
-<div class="w-14 h-14 rounded-lg bg-[#31e6df]/10 flex items-center justify-center mb-8 group-hover:bg-[#31e6df]/20 transition-colors"><span class="material-symbols-outlined text-[#31e6df] text-3xl">storefront</span></div>
-<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-[#31e6df] transition-colors">GDR Exhibition</h3>
-<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal">Check out the GINOVO x GDR exhibition news.</p>
-</a>
+<div class="relative w-full aspect-video bg-[#101827] rounded-2xl overflow-hidden shadow-2xl border border-white/5 fade-up delay-100">
+<iframe class="absolute inset-0 w-full h-full" src="https://www.youtube-nocookie.com/embed/8O6Qkg7pjp8?rel=0&amp;modestbranding=1" title="Sloping putting mat introduction video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div>
+</section>
+<!-- Feature Grid Section -->
+<section class="py-32 bg-background border-b border-white/5">
+<div class="px-8 lg:px-16 max-w-[1280px] mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-20 fade-up">
+<span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] font-medium uppercase mb-4 block text-[11px]">Performance Metrics</span>
+<h2 class="text-[48px] font-extrabold text-[#FFFFFF] tracking-[-0.02em] leading-tight mb-6">Build Better Skills Through Putting Games</h2>
+<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal max-w-xl mx-auto">Using the sloping structure, we repeatedly train distance, direction, and slope response.</p>
+</div>
+<div class="hidden grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8" aria-hidden="true">
+<div class="bg-[#101827] border border-white/5 rounded-2xl overflow-hidden hover:border-[#31e6df]/50 transition-all duration-300 fade-up">
+<div class="bg-white aspect-[4/5] overflow-hidden"><img alt="Improved sense of distance" class="w-full h-full object-contain" src="sloping-distance.png"></div>
+<div class="p-8 text-center">
+<div class="text-[#31e6df] font-['Geist'] tracking-[0.2em] text-sm font-bold mb-4">01</div>
+<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4">Improved sense of distance</h3>
+<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal max-w-xl mx-auto">You can practice putting straightness and distance by targeting various target scores for each location.</p>
+</div>
+</div>
+<div class="bg-[#101827] border border-white/5 rounded-2xl overflow-hidden hover:border-[#31e6df]/50 transition-all duration-300 fade-up delay-100">
+<div class="bg-white aspect-[4/5] overflow-hidden"><img alt="Improved sense of direction and distance" class="w-full h-full object-contain" src="sloping-direction-distance.png"></div>
+<div class="p-8 text-center">
+<div class="text-[#31e6df] font-['Geist'] tracking-[0.2em] text-sm font-bold mb-4">02</div>
+<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4">Improved Direction & Distance Control</h3>
+<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal max-w-xl mx-auto">In a putting game, you can practice direction and distance by hitting your opponent's ball.</p>
+</div>
+</div>
+<div class="bg-[#101827] border border-white/5 rounded-2xl overflow-hidden hover:border-[#31e6df]/50 transition-all duration-300 fade-up delay-200">
+<div class="bg-white aspect-[4/5] overflow-hidden"><img alt="Slope Practice" class="w-full h-full object-contain" src="sloping-practice.png"></div>
+<div class="p-8 text-center">
+<div class="text-[#31e6df] font-['Geist'] tracking-[0.2em] text-sm font-bold mb-4">03</div>
+<h3 class="text-white text-3xl lg:text-4xl font-bold tracking-tight mb-4">Slope Practice</h3>
+<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal max-w-xl mx-auto">You can repeatedly practice the various slopes and paths you encounter on the green with a sloping structure.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Packaging Section -->
+<section class="py-24 bg-background border-b border-white/5">
+<div class="px-8 lg:px-16 max-w-[1280px] mx-auto">
+<div class="bg-[#101827] border border-white/5 rounded-2xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center" x-data="{ slide: 0, images: [
+  { src: 'sloping-package-main.png', alt: 'Sloping putting mat package image' },
+  { src: 'sloping-package-product-info-en.png', alt: 'GINOVO sloping putting mat product information in English' }
+] }">
+<div class="lg:col-span-5 space-y-8 fade-up">
+<div class="space-y-4">
+<span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] font-medium uppercase text-[11px]">Product Package</span>
+<h2 class="text-[48px] font-extrabold text-[#FFFFFF] tracking-[-0.02em] leading-tight">Package Contents</h2>
+<p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed font-normal max-w-xl">We provide the necessary components so you can start practicing with the sloping putting mat right away.</p>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4"><span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] text-lg font-bold shrink-0">01.</span><div><h3 class="text-white text-xl font-bold mb-2">GINOVO Sloping Putting Mat Body</h3><p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed">Premium putting mat for actual slope and distance training</p></div></div>
+<div class="flex gap-4"><span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] text-lg font-bold shrink-0">02.</span><div><h3 class="text-white text-xl font-bold mb-2">Green-Speed Brush</h3><p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed">Professional tool for controlling green speed and managing mat texture</p></div></div>
+<div class="flex gap-4"><span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] text-lg font-bold shrink-0">03.</span><div><h3 class="text-white text-xl font-bold mb-2">Product User Manual</h3><p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed">Guide to detailed functions and how to use them</p></div></div>
+<div class="flex gap-4"><span class="text-[#31e6df] font-['Geist'] tracking-[0.1em] text-lg font-bold shrink-0">04.</span><div><h3 class="text-white text-xl font-bold mb-2">Dedicated Packaging</h3><p class="text-[#aeb4bf] text-[13px] md:text-[15px] leading-relaxed">Pouch and box packaging suitable for gifting and storage</p></div></div>
+</div>
+</div>
+<div class="lg:col-span-7 fade-up delay-100">
+<div class="relative h-[520px] md:h-[620px] w-full rounded-xl overflow-hidden bg-[#070c17] border border-white/10">
+<template x-for="(image, index) in images" :key="image.src">
+<img x-show="slide === index" x-transition.opacity.duration.300ms :src="image.src" :alt="image.alt" class="absolute inset-0 w-full h-full object-contain bg-white">
+</template>
+<button type="button" aria-label="Previous image" class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-[#31e6df] hover:bg-black transition-colors" @click="slide = (slide - 1 + images.length) % images.length"><span class="material-symbols-outlined">chevron_left</span></button>
+<button type="button" aria-label="Next image" class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-[#31e6df] hover:bg-black transition-colors" @click="slide = (slide + 1) % images.length"><span class="material-symbols-outlined">chevron_right</span></button>
+<div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3">
+<template x-for="(_, index) in images" :key="index"><button type="button" aria-label="select image" class="w-2.5 h-2.5 rounded-full transition-colors" :class="slide === index ? 'bg-[#31e6df]' : 'bg-white/30'" @click="slide = index"></button></template>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
 
+<section class="py-[120px] px-6 bg-background border-t border-white/5">
+  <div class="max-w-[1200px] mx-auto pt-[63px]">
+    <div class="text-center max-w-[1200px] mx-auto mb-16">
+      <h2 class="text-[30px] md:text-[36px] font-bold text-white leading-[1.45] whitespace-normal lg:whitespace-nowrap">GINOVO putting mat selected according to space and training purpose</h2>
+      <p class="text-[#aeb4bf] text-lg leading-[1.7] pt-3">GINOVO Slope Putting Mat can be selected to suit your space and training purpose.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1160px] mx-auto pt-[26px]">
+      <article class="relative min-h-[420px] rounded-2xl overflow-hidden">
+        <img src="comparison-90cm.png" alt="90cm mat" class="absolute inset-0 w-full h-full object-cover opacity-[0.79]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/[0.92] to-transparent"></div>
+        <div class="absolute inset-0 z-10 px-8 pb-[76px] flex flex-col justify-end">
+          <div class="mb-6 pb-6 border-b border-white/10">
+            <h3 class="text-[28px] font-bold text-white mb-2">90cm</h3>
+            <p class="text-[#31e6df] text-sm font-medium">Slope Putting Mat / Representative product / Slope on both sides</p>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Various attack line training</span></li>
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Uphill/Downhill/Hook/Slice</span></li>
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Environment most similar to the field</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="relative min-h-[420px] rounded-2xl overflow-hidden">
+        <img src="comparison-70cm.png" alt="sloping mat" class="absolute inset-0 w-full h-full object-cover opacity-80">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/[0.92] to-transparent"></div>
+        <div class="absolute inset-0 z-10 px-8 pb-[76px] flex flex-col justify-end">
+          <div class="mb-6 pb-6 border-b border-white/10">
+            <h3 class="text-[28px] font-bold text-white mb-2">70cm</h3>
+            <p class="text-[#34d399] text-sm font-medium">Sloping putting mat / game type training / slope + game combination</p>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Putting game method applied</span></li>
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Practice using slope sections</span></li>
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Solo &amp; Group Play</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="relative min-h-[420px] rounded-2xl overflow-hidden">
+        <img src="comparison-60cm.png" alt="60cm mat" class="absolute inset-0 w-full h-full object-cover opacity-80">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+        <div class="absolute inset-0 z-10 px-8 pb-[76px] flex flex-col justify-end">
+          <div class="mb-6 pb-6 border-b border-white/10">
+            <h3 class="text-[28px] font-bold text-white mb-2">60cm</h3>
+            <p class="text-[#34d399] text-sm font-medium">Slope Putting Mat / Compact type / Slope on one side</p>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Suitable for narrow spaces</span></li>
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Basic putting routine training</span></li>
+            <li class="flex items-start gap-3"><span class="text-white/40">◉</span><span class="text-white/80">Use of personal space, office, etc.</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 <section class="source-home-cta">
   <div class="source-home-cta-copy">
     <p>Beyond Tech, Into Culture: The New Standard Powered by Data</p>
