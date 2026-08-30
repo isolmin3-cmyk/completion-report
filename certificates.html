@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./assets/site-header.js" defer></script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -93,7 +92,7 @@
         .ginovo-dropdown-wrap { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); padding-top: 12px; background: transparent; z-index: 1001; opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; }
         .ginovo-nav-item:hover .ginovo-dropdown-wrap,
         .ginovo-lang:hover .ginovo-dropdown-wrap { opacity: 1; visibility: visible; }
-        .ginovo-dropdown-panel { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); padding: 12px; min-width: 340px; border-radius: 18px; box-shadow: 0 20px 40px rgba(0,0,0,0.22); display: flex; flex-direction: column; }
+        .ginovo-dropdown-panel { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); padding: 12px; min-width: 160px; border-radius: 18px; box-shadow: 0 20px 40px rgba(0,0,0,0.22); display: flex; flex-direction: column; }
         .ginovo-dropdown-panel a { padding: 8px 16px; border-radius: 8px; display: block; color: #111111; font-size: 14px; font-weight: 500; white-space: nowrap; }
         .ginovo-dropdown-panel a:hover { background: rgba(0,0,0,0.05); }
         .ginovo-header-right { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
@@ -134,7 +133,7 @@
         .ginovo-common-cta-bg { position: absolute; inset: 0; z-index: 0; background: url("./assets/gemini_generated_image_8p64lj8p64lj8p64-mrjnlv9t-187y.jpg") center / cover no-repeat; opacity: 0.67; pointer-events: none; }
         .ginovo-common-cta-content { max-width: 768px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
         .ginovo-common-cta-content p { font-size: clamp(16px, 2vw, 22px); font-weight: 700; margin: 0 0 20px; color: #FFFFFFD6; letter-spacing: -0.01em; }
-        .ginovo-common-cta-content h2 { max-width: 1100px; font-size: clamp(30px, 4.2vw, 41px); font-weight: 700; margin: 0 auto; line-height: 1.4; color: #FFFFFF; letter-spacing: -0.02em; white-space: normal; text-wrap: balance; }
+        .ginovo-common-cta-content h2 { font-size: clamp(30px, 4.2vw, 41px); font-weight: 700; margin: 0; line-height: 1.4; color: #FFFFFF; letter-spacing: -0.02em; white-space: nowrap; }
         .ginovo-footer { position: relative; z-index: 1; background: #000000; color: #FFFFFF; border-top: 1px solid rgba(255,255,255,0.1); padding: 80px 40px 40px; }
         .ginovo-footer-container { max-width: 1200px; margin: 0 auto 60px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; }
         .ginovo-footer h4 { font-size: 14px; font-weight: 600; color: #FFFFFF; margin: 0 0 20px; letter-spacing: 0; }
@@ -171,34 +170,35 @@
             <ul class="ginovo-nav-list">
                 <li class="ginovo-nav-item"><a class="ginovo-nav-link" href="./index.html">Home</a></li>
                 <li class="ginovo-nav-item">
-                    <a class="ginovo-nav-link" href="./index.html#gt-sec-esg">company</a>
+                    <a class="ginovo-nav-link" href="./index.html#gt-sec-esg">회사</a>
                     <div class="ginovo-dropdown-wrap">
                         <div class="ginovo-dropdown-panel">
-                            <a href="./index.html#gt-sec-esg">About us</a>
-                            <a href="./index.html#gt-sec-history">Company History</a>
-                            <a href="./index.html#gt-sec-location">Directions</a>
+                            <a href="./index.html#gt-sec-esg">회사 소개</a>
+                            <a href="./index.html#gt-sec-history">회사 연혁</a>
+                            <a href="./index.html#gt-sec-location">오시는 길</a>
                         </div>
                     </div>
                 </li>
                 <li class="ginovo-nav-item">
-                    <a class="ginovo-nav-link" href="./putting-mat.html">Product introduction</a>
+                    <a class="ginovo-nav-link" href="./putting-mat.html">제품 소개</a>
                     <div class="ginovo-dropdown-wrap">
                         <div class="ginovo-dropdown-panel">
-                            <a href="./putting-mat.html">Slope Putting Mat</a>
-                            <a href="./smart-golf-ball.html">smart golf ball</a>
+                            <a href="./putting-mat.html">경사 퍼팅매트</a>
+                            <a href="./smart-golf-ball.html">스마트 골프 볼</a>
                         </div>
                     </div>
                 </li>
+                <li class="ginovo-nav-item"><a class="ginovo-nav-link" href="https://smartstore.naver.com/ginovo" target="_blank" rel="noopener noreferrer">Shop</a></li>
             </ul>
         </nav>
         <div class="ginovo-header-right">
-            <a class="ginovo-login" href="#">Login</a>
+            <a class="ginovo-login" href="#">로그인</a>
             <div class="ginovo-lang">
                 <a href="#"><i class="ph ph-globe" style="font-size: 16px;"></i> <i class="ph ph-caret-down" style="font-size: 11px;"></i></a>
                 <div class="ginovo-dropdown-wrap">
                     <div class="ginovo-dropdown-panel">
-                        <a href="https://isolmin3-cmyk.github.io/ginovo-homepage/certificates.html">Korean</a>
-                        <a href="./certificates.html" aria-current="page">English</a>
+                        <a href="./certificates.html" aria-current="page">한국어</a>
+                        <a href="https://isolmin3-cmyk.github.io/GINOVO-/design-awards.html">English</a>
                     </div>
                 </div>
             </div>
@@ -213,8 +213,8 @@
                     <div class="inline-block px-4 py-1.5 rounded-full bg-white/5 border text-xs font-semibold tracking-widest uppercase mb-6" style="border-color: var(--border); color: rgba(255,255,255,0.6)">
                         Certifications
                     </div>
-                    <h1 class="text-3xl md:text-5xl font-bold mb-4">full certificate</h1>
-                    <p class="text-lg" style="color: rgba(255,255,255,0.6)">Check out 15 patents, trademarks, and certification materials held by Green Talk.</p>
+                    <h1 class="text-3xl md:text-5xl font-bold mb-4">전체 인증서</h1>
+                    <p class="text-lg" style="color: rgba(255,255,255,0.6)">그린토크가 보유한 특허, 상표, 인증 자료 15건을 확인하세요.</p>
                 </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -222,7 +222,7 @@
                         <div class="glass-panel glass-panel-hover rounded-xl overflow-hidden flex flex-col">
                             <div class="aspect-[3/4] overflow-hidden" style="background: {{ cert.bgStyle }}">
                                 <sc-if value="{{ cert.needsSlot }}" hint-placeholder-val="{{ false }}">
-                                    <image-slot id="{{ cert.slotId }}" shape="rect" placeholder="Certificate image" style="width:100%;height:100%"></image-slot>
+                                    <image-slot id="{{ cert.slotId }}" shape="rect" placeholder="인증서 이미지" style="width:100%;height:100%"></image-slot>
                                 </sc-if>
                             </div>
                             <div class="p-4">
@@ -238,7 +238,7 @@
             <div class="ginovo-common-cta-bg"></div>
             <div class="ginovo-common-cta-content">
                 <p>Beyond Tech, Into Culture: The New Standard Powered by Data</p>
-                <h2>We open a culture of communication beyond the limits of technology with data.</h2>
+                <h2>데이터로 기술의 한계를 넘어 소통의 문화를 엽니다.</h2>
             </div>
         </section>
 
@@ -247,26 +247,26 @@
     <footer class="ginovo-footer" data-screen-label="푸터">
         <div class="ginovo-footer-container">
             <div>
-                <h4>Customer Center</h4>
-                <p class="ginovo-footer-phone">+82-62-716-0995</p>
-                <p class="ginovo-footer-muted">9:00 AM - 5:00 PM · Republic of Korea | Lunch time 12:00 - 13:00<br>Closed on weekends and public holidays</p>
+                <h4>고객센터</h4>
+                <p class="ginovo-footer-phone">062-716-0995</p>
+                <p class="ginovo-footer-muted">오전 9:00 - 오후 5:00 | 점심시간 12:00 - 13:00<br>주말 및 공휴일 휴무</p>
             </div>
             <div>
-                <h4>bank information</h4>
-                <p class="ginovo-footer-muted">Industrial Bank of Korea 65904714504019 Green Talk Co., Ltd.</p>
+                <h4>은행 정보</h4>
+                <p class="ginovo-footer-muted">기업은행 65904714504019 (주)그린토크</p>
             </div>
             <div>
-                <h4>Green Talk</h4>
+                <h4>그린토크</h4>
                 <ul class="ginovo-footer-links">
-                    <li><a href="./index.html#gt-sec-esg">Company Introduction</a></li>
-                    <li><a href="./index.html#gt-sec-history">Entrepreneurship Values</a></li>
-                    <li><a href="./certificates.html">design awards</a></li>
-                    <li><a href="./index.html#gt-sec-location">Directions</a></li>
+                    <li><a href="./index.html#gt-sec-esg">회사소개</a></li>
+                    <li><a href="./index.html#gt-sec-history">창업 가치</a></li>
+                    <li><a href="./certificates.html">디자인 어워드</a></li>
+                    <li><a href="./index.html#gt-sec-location">오시는 길</a></li>
                 </ul>
             </div>
             <div>
-                <h4>Business information</h4>
-                <p class="ginovo-footer-info">Headquarters: #404, 45 Jami-ro 6beon-gil, Buk-gu,<br>Gwangju-si, Jeollanam-do, Republic of Korea<br>Factory: Sebang Industry, 236 Sonjae-ro, Gwangsan-gu,<br>Gwangju-si, Jeollanam-do, Republic of Korea</p>
+                <h4>사업자 정보</h4>
+                <p class="ginovo-footer-info">상호명 : (주)그린토크 　 대표 : 손영국 　 주소 : 전남광주통합특별시 신호구 손재로 236 그린토크 　 사업자등록번호 : 603-87-02720</p>
             </div>
         </div>
         <div class="ginovo-footer-bottom">
@@ -333,21 +333,21 @@ class Component extends DCLogic {
   renderVals() {
     const openNav = this.state.openNav;
     const known = [
-      { title: 'Patent Certificate', file: './assets/cert-018.jpg' },
-      { title: 'Patent Certificate', file: './assets/cert-019.jpg' },
-      { title: 'Patent Certificate', file: './assets/cert-020.jpg' },
-      { title: 'Patent Certificate', file: './assets/cert-021.jpg' },
-      { title: 'Design Registration Certificate', file: './assets/cert-026.png' },
-      { title: 'Design Registration Certificate', file: './assets/cert-027.png' },
-      { title: 'Trademark Registration Certificate', file: './assets/cert-028.png' },
-      { title: 'Design Registration Certificate', file: './assets/cert-029.png' },
-      { title: 'Patent Certificate', file: './assets/cert-030.png' },
-      { title: 'Design Registration Certificate', file: './assets/cert-031.png' },
-      { title: 'Patent Certificate', file: './assets/cert-032.png' },
-      { title: 'Trademark Registration Certificate', file: './assets/cert-033.png' },
-      { title: 'Patent Certificate', file: './assets/cert-034.png' },
-      { title: 'Patent Certificate', file: './assets/cert-035.png' },
-      { title: 'Trademark Registration Certificate', file: './assets/cert-036.png' }
+      { title: '특허증', file: './assets/cert-018.jpg' },
+      { title: '특허증', file: './assets/cert-019.jpg' },
+      { title: '특허증', file: './assets/cert-020.jpg' },
+      { title: '특허증', file: './assets/cert-021.jpg' },
+      { title: '디자인등록증', file: './assets/cert-026.png' },
+      { title: '디자인등록증', file: './assets/cert-027.png' },
+      { title: '상표등록증', file: './assets/cert-028.png' },
+      { title: '디자인등록증', file: './assets/cert-029.png' },
+      { title: '특허증', file: './assets/cert-030.png' },
+      { title: '디자인등록증', file: './assets/cert-031.png' },
+      { title: '특허증', file: './assets/cert-032.png' },
+      { title: '상표등록증', file: './assets/cert-033.png' },
+      { title: '특허증', file: './assets/cert-034.png' },
+      { title: '특허증', file: './assets/cert-035.png' },
+      { title: '상표등록증', file: './assets/cert-036.png' }
     ];
     const extraTitles = [];
 

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homepage content management | GINOVO</title>
+  <title>홈페이지 콘텐츠 관리 | GINOVO</title>
   <script src="./assets/putting-mat-content-config.js?v=20260828-6"></script>
   <script src="./assets/smartball-content-config.js?v=20260828-6"></script>
   <script src="./assets/smartball-media-config.js?v=20260828-6"></script>
@@ -35,68 +35,68 @@
 </head>
 <body>
 <main>
-  <h1>Slope Putting Mat product card management</h1>
-  <p class="notice">You can edit the photo and text on each card. Currently, the static site approach only applies to saved browsers.</p>
+  <h1>경사 퍼팅매트 제품 카드 관리</h1>
+  <p class="notice">각 카드의 사진과 글씨를 수정할 수 있습니다. 현재 정적 사이트 방식에서는 저장한 브라우저에만 적용됩니다.</p>
   <form id="editor"><div class="grid" id="cards"></div>
     <div class="actions">
-      <button type="submit">Save changes</button>
-      <button class="secondary" type="button" id="reset">Restore to default</button>
-      <a href="./putting-mat.html#comparison" target="_blank">Check page</a>
+      <button type="submit">변경사항 저장</button>
+      <button class="secondary" type="button" id="reset">기본값으로 복원</button>
+      <a href="./putting-mat.html#comparison" target="_blank">페이지 확인</a>
     </div>
     <p id="status" role="status"></p>
   </form>
   <section class="admin-section">
-    <h1>Smart Golf Ball Putting System Section Management</h1>
-    <p class="notice">You can edit both images and each text separately.</p>
+    <h1>스마트 골프공 퍼팅 시스템 섹션 관리</h1>
+    <p class="notice">두 이미지와 각 문구를 따로 수정할 수 있습니다.</p>
     <form id="smart-editor">
       <div class="smart-grid">
         <section class="smart-card">
-          <img class="preview" id="system-preview" alt="Putting System Image Preview">
-          <label>putting system image</label><input id="system-image" type="file" accept="image/png,image/jpeg,image/webp">
-          <label>title</label><input type="text" data-smart-field="systemTitle">
-          <label>Emphasis phrase</label><textarea data-smart-field="systemSubtitle"></textarea>
-          <label>composition phrase</label><textarea data-smart-field="systemDescription"></textarea>
+          <img class="preview" id="system-preview" alt="퍼팅 시스템 이미지 미리보기">
+          <label>퍼팅 시스템 이미지</label><input id="system-image" type="file" accept="image/png,image/jpeg,image/webp">
+          <label>제목</label><input type="text" data-smart-field="systemTitle">
+          <label>강조 문구</label><textarea data-smart-field="systemSubtitle"></textarea>
+          <label>구성 문구</label><textarea data-smart-field="systemDescription"></textarea>
         </section>
         <section class="smart-card">
-          <img class="preview" id="charger-preview" alt="Wireless charger image preview">
-          <label>wireless charger images</label><input id="charger-image" type="file" accept="image/png,image/jpeg,image/webp">
-          <label>title</label><input type="text" data-smart-field="chargerTitle">
-          <label>Emphasis phrase</label><textarea data-smart-field="chargerSubtitle"></textarea>
-          <label>Item 1</label><textarea data-smart-field="chargerNote1"></textarea>
-          <label>Item 2</label><textarea data-smart-field="chargerNote2"></textarea>
+          <img class="preview" id="charger-preview" alt="무선 충전기 이미지 미리보기">
+          <label>무선 충전기 이미지</label><input id="charger-image" type="file" accept="image/png,image/jpeg,image/webp">
+          <label>제목</label><input type="text" data-smart-field="chargerTitle">
+          <label>강조 문구</label><textarea data-smart-field="chargerSubtitle"></textarea>
+          <label>항목 1</label><textarea data-smart-field="chargerNote1"></textarea>
+          <label>항목 2</label><textarea data-smart-field="chargerNote2"></textarea>
         </section>
       </div>
       <div class="actions">
-        <button type="submit">Putting System Save</button>
-        <button class="secondary" type="button" id="smart-reset">Restore to default</button>
-        <a href="./smart-golf-ball.html" target="_blank">Check page</a>
+        <button type="submit">퍼팅 시스템 저장</button>
+        <button class="secondary" type="button" id="smart-reset">기본값으로 복원</button>
+        <a href="./smart-golf-ball.html" target="_blank">페이지 확인</a>
       </div>
       <p id="smart-status" role="status"></p>
     </form>
   </section>
   <section class="admin-section">
-    <h1>Target distance/green speed practice section management</h1>
-    <p class="notice">You can edit the section title and description, as well as the practice and analysis images at the bottom.</p>
+    <h1>목표 거리 / 그린 스피드 연습 섹션 관리</h1>
+    <p class="notice">섹션 제목과 설명, 하단의 연습·분석 이미지를 각각 수정할 수 있습니다.</p>
     <form id="distance-editor">
       <div class="smart-card">
-        <label>representative phrase</label><textarea data-distance-field="distanceTitle"></textarea>
-        <label>Description 1</label><textarea data-distance-field="distancePoint1"></textarea>
-        <label>Description 2</label><textarea data-distance-field="distancePoint2"></textarea>
+        <label>대표 문구</label><textarea data-distance-field="distanceTitle"></textarea>
+        <label>설명 1</label><textarea data-distance-field="distancePoint1"></textarea>
+        <label>설명 2</label><textarea data-distance-field="distancePoint2"></textarea>
       </div>
       <div class="smart-grid" style="margin-top:20px">
         <section class="smart-card">
-          <img class="preview" id="distance-practice-preview" alt="Street practice image preview">
-          <label>street practice images</label><input id="distance-practice-image" type="file" accept="image/png,image/jpeg,image/webp">
+          <img class="preview" id="distance-practice-preview" alt="거리 연습 이미지 미리보기">
+          <label>거리 연습 이미지</label><input id="distance-practice-image" type="file" accept="image/png,image/jpeg,image/webp">
         </section>
         <section class="smart-card">
-          <img class="preview" id="distance-analysis-preview" alt="Analysis image preview">
-          <label>Quantitative/RBI analysis image</label><input id="distance-analysis-image" type="file" accept="image/png,image/jpeg,image/webp">
+          <img class="preview" id="distance-analysis-preview" alt="분석 이미지 미리보기">
+          <label>정량성·타점 분석 이미지</label><input id="distance-analysis-image" type="file" accept="image/png,image/jpeg,image/webp">
         </section>
       </div>
       <div class="actions">
-        <button type="submit">Save the distance practice section</button>
-        <button class="secondary" type="button" id="distance-reset">Restore to default</button>
-        <a href="./smart-golf-ball.html" target="_blank">Check page</a>
+        <button type="submit">거리 연습 섹션 저장</button>
+        <button class="secondary" type="button" id="distance-reset">기본값으로 복원</button>
+        <a href="./smart-golf-ball.html" target="_blank">페이지 확인</a>
       </div>
       <p id="distance-status" role="status"></p>
     </form>
@@ -111,11 +111,11 @@
     const article = document.createElement('section');
     article.className = 'card';
     article.innerHTML = `
-      <img class="preview" src="${card.image}" alt="${card.title} preview">
-      <label>Attach image</label><input type="file" accept="image/png,image/jpeg,image/webp" data-image="${index}">
-      <label>title</label><input type="text" data-field="title" value="${card.title}">
-      <label>Description</label><input type="text" data-field="subtitle" value="${card.subtitle}">
-      ${card.items.map((item, itemIndex) => `<label>Item ${itemIndex + 1}</label><input type="text" data-item="${itemIndex}" value="${item}">`).join('')}`;
+      <img class="preview" src="${card.image}" alt="${card.title} 미리보기">
+      <label>사진 첨부</label><input type="file" accept="image/png,image/jpeg,image/webp" data-image="${index}">
+      <label>제목</label><input type="text" data-field="title" value="${card.title}">
+      <label>설명</label><input type="text" data-field="subtitle" value="${card.subtitle}">
+      ${card.items.map((item, itemIndex) => `<label>항목 ${itemIndex + 1}</label><input type="text" data-item="${itemIndex}" value="${item}">`).join('')}`;
     article.querySelector('input[type="file"]').addEventListener('change', event => {
       const file = event.target.files[0];
       if (!file) return;
@@ -136,9 +136,9 @@
     }));
     try {
       localStorage.setItem(window.PUTTING_MAT_COMPARISON_STORAGE_KEY, JSON.stringify(result));
-      document.getElementById('status').textContent = 'Saved. Select Check Page to review your changes.';
+      document.getElementById('status').textContent = '저장했습니다. 페이지 확인 버튼을 눌러 확인하세요.';
     } catch (_) {
-      document.getElementById('status').textContent = 'The image is too large. Please try a smaller image.';
+      document.getElementById('status').textContent = '이미지 용량이 너무 큽니다. 더 작은 이미지로 다시 시도하세요.';
     }
   });
   document.getElementById('reset').addEventListener('click', () => {
@@ -180,9 +180,9 @@
     try {
       localStorage.setItem(window.SMARTBALL_CONTENT_STORAGE_KEY, JSON.stringify(nextContent));
       localStorage.setItem(window.SMARTBALL_MEDIA_STORAGE_KEY, JSON.stringify(nextMedia));
-      document.getElementById('smart-status').textContent = 'Saved. Select Check Page to review your changes.';
+      document.getElementById('smart-status').textContent = '저장했습니다. 페이지 확인 버튼을 눌러 확인하세요.';
     } catch (_) {
-      document.getElementById('smart-status').textContent = 'The image is too large. Please try a smaller image.';
+      document.getElementById('smart-status').textContent = '이미지 용량이 너무 큽니다. 더 작은 이미지로 다시 시도하세요.';
     }
   });
   document.getElementById('smart-reset').addEventListener('click', () => {
@@ -209,9 +209,9 @@
     try {
       localStorage.setItem(window.SMARTBALL_CONTENT_STORAGE_KEY, JSON.stringify(nextContent));
       localStorage.setItem(window.SMARTBALL_MEDIA_STORAGE_KEY, JSON.stringify(nextMedia));
-      document.getElementById('distance-status').textContent = 'Saved. Select Check Page to review your changes.';
+      document.getElementById('distance-status').textContent = '저장했습니다. 페이지 확인 버튼을 눌러 확인하세요.';
     } catch (_) {
-      document.getElementById('distance-status').textContent = 'The image is too large. Please try a smaller image.';
+      document.getElementById('distance-status').textContent = '이미지 용량이 너무 큽니다. 더 작은 이미지로 다시 시도하세요.';
     }
   });
   document.getElementById('distance-reset').addEventListener('click', () => {

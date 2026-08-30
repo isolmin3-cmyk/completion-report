@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./assets/site-header.js" defer></script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -65,7 +64,7 @@
         .ginovo-dropdown-wrap { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); padding-top: 12px; background: transparent; z-index: 1001; opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; }
         .ginovo-nav-item:hover .ginovo-dropdown-wrap,
         .ginovo-lang:hover .ginovo-dropdown-wrap { opacity: 1; visibility: visible; }
-        .ginovo-dropdown-panel { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); padding: 12px; min-width: 340px; border-radius: 18px; box-shadow: 0 20px 40px rgba(0,0,0,0.22); display: flex; flex-direction: column; }
+        .ginovo-dropdown-panel { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); padding: 12px; min-width: 160px; border-radius: 18px; box-shadow: 0 20px 40px rgba(0,0,0,0.22); display: flex; flex-direction: column; }
         .ginovo-dropdown-panel a { padding: 8px 16px; border-radius: 8px; display: block; color: #111111; font-size: 14px; font-weight: 500; white-space: nowrap; }
         .ginovo-dropdown-panel a:hover { background: rgba(0,0,0,0.05); }
         .ginovo-header-right { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
@@ -106,7 +105,7 @@
         .ginovo-common-cta-bg { position: absolute; inset: 0; z-index: 0; background: url("./assets/gemini_generated_image_8p64lj8p64lj8p64-mrjnlv9t-187y.jpg") center / cover no-repeat; opacity: 0.67; pointer-events: none; }
         .ginovo-common-cta-content { max-width: 768px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
         .ginovo-common-cta-content p { font-size: clamp(16px, 2vw, 22px); font-weight: 700; margin: 0 0 20px; color: #FFFFFFD6; letter-spacing: -0.01em; }
-        .ginovo-common-cta-content h2 { max-width: 1100px; font-size: clamp(30px, 4.2vw, 41px); font-weight: 700; margin: 0 auto; line-height: 1.4; color: #FFFFFF; letter-spacing: -0.02em; white-space: normal; text-wrap: balance; }
+        .ginovo-common-cta-content h2 { font-size: clamp(30px, 4.2vw, 41px); font-weight: 700; margin: 0; line-height: 1.4; color: #FFFFFF; letter-spacing: -0.02em; white-space: nowrap; }
         .ginovo-footer { position: relative; z-index: 1; background: #000000; color: #FFFFFF; border-top: 1px solid rgba(255,255,255,0.1); padding: 80px 40px 40px; }
         .ginovo-footer-container { max-width: 1200px; margin: 0 auto 60px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; }
         .ginovo-footer h4 { font-size: 14px; font-weight: 600; color: #FFFFFF; margin: 0 0 20px; letter-spacing: 0; }
@@ -143,34 +142,35 @@
             <ul class="ginovo-nav-list">
                 <li class="ginovo-nav-item"><a class="ginovo-nav-link" href="./index.html">Home</a></li>
                 <li class="ginovo-nav-item">
-                    <a class="ginovo-nav-link" href="./index.html#gt-sec-esg">company</a>
+                    <a class="ginovo-nav-link" href="./index.html#gt-sec-esg">회사</a>
                     <div class="ginovo-dropdown-wrap">
                         <div class="ginovo-dropdown-panel">
-                            <a href="./index.html#gt-sec-esg">About us</a>
-                            <a href="./index.html#gt-sec-history">Company History</a>
-                            <a href="./index.html#gt-sec-location">Directions</a>
+                            <a href="./index.html#gt-sec-esg">회사 소개</a>
+                            <a href="./index.html#gt-sec-history">회사 연혁</a>
+                            <a href="./index.html#gt-sec-location">오시는 길</a>
                         </div>
                     </div>
                 </li>
                 <li class="ginovo-nav-item">
-                    <a class="ginovo-nav-link" href="./putting-mat.html">Product introduction</a>
+                    <a class="ginovo-nav-link" href="./putting-mat.html">제품 소개</a>
                     <div class="ginovo-dropdown-wrap">
                         <div class="ginovo-dropdown-panel">
-                            <a href="./putting-mat.html">Slope Putting Mat</a>
-                            <a href="./smart-golf-ball.html">smart golf ball</a>
+                            <a href="./putting-mat.html">경사 퍼팅매트</a>
+                            <a href="./smart-golf-ball.html">스마트 골프 볼</a>
                         </div>
                     </div>
                 </li>
+                <li class="ginovo-nav-item"><a class="ginovo-nav-link" href="https://smartstore.naver.com/ginovo" target="_blank" rel="noopener noreferrer">Shop</a></li>
             </ul>
         </nav>
         <div class="ginovo-header-right">
-            <a class="ginovo-login" href="#">Login</a>
+            <a class="ginovo-login" href="#">로그인</a>
             <div class="ginovo-lang">
                 <a href="#"><i class="ph ph-globe" style="font-size: 16px;"></i> <i class="ph ph-caret-down" style="font-size: 11px;"></i></a>
                 <div class="ginovo-dropdown-wrap">
                     <div class="ginovo-dropdown-panel">
-                        <a href="https://isolmin3-cmyk.github.io/ginovo-homepage/contact.html">Korean</a>
-                        <a href="./contact.html" aria-current="page">English</a>
+                        <a href="./contact.html" aria-current="page">한국어</a>
+                        <a href="https://isolmin3-cmyk.github.io/GINOVO-/inquiry.html">English</a>
                     </div>
                 </div>
             </div>
@@ -185,8 +185,8 @@
             <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.50), rgba(0,0,0,0.60) 50%, rgba(0,0,0,0.80)); z-index: 1;"></div>
             <div style="position: relative; z-index: 3; text-align: center; max-width: 900px; padding: 0 24px;">
                 <div style="display: inline-block; padding: 6px 20px; border-radius: 100px; background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); border: 1px solid color-mix(in srgb, var(--accent-cyan) 30%, transparent); color: var(--accent-cyan); font-size: 12px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 28px;" data-reveal="true">Contact Us</div>
-                <h1 style="font-size: clamp(32px, 5.5vw, 58px); font-weight: 700; margin: 0 0 28px; color: var(--hero-heading); letter-spacing: -0.03em; line-height: 1.25;" data-reveal="true">Contact us</h1>
-                <p style="font-size: clamp(15px, 1.5vw, 18px); color: var(--hero-body); line-height: 1.7; margin: 0 0 32px; max-width: 640px; margin-left: auto; margin-right: auto;" data-reveal="true">Please contact us according to your purpose, from product use inquiries to technical partnerships, delivery, investment, joint R&amp;D, and exhibition/event collaboration. Green Talk is waiting for partners to join us with data-based golf solutions.</p>
+                <h1 style="font-size: clamp(32px, 5.5vw, 58px); font-weight: 700; margin: 0 0 28px; color: var(--hero-heading); letter-spacing: -0.03em; line-height: 1.25;" data-reveal="true">문의하기</h1>
+                <p style="font-size: clamp(15px, 1.5vw, 18px); color: var(--hero-body); line-height: 1.7; margin: 0 0 32px; max-width: 640px; margin-left: auto; margin-right: auto;" data-reveal="true">제품 사용 문의부터 기술 제휴, 납품, 투자, 공동 R&amp;D, 전시·행사 협업까지 목적에 맞게 문의해 주세요. 그린토크는 데이터 기반 골프 솔루션으로 함께할 파트너를 기다리고 있습니다.</p>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 680px; margin: 0 auto;" data-reveal="true">
                     <sc-for list="{{ inquiryTags }}" as="tag" hint-placeholder-count="6">
                         
@@ -195,12 +195,12 @@
             </div>
         </section>
 
-        <section data-screen-label="Frequently Asked Questions" style="padding: 96px 24px; position: relative; z-index: 1; background: var(--faq-bg); color: var(--faq-heading); border-top: 1px solid rgba(255,255,255,0.03);">
+        <section data-screen-label="자주 묻는 질문" style="padding: 96px 24px; position: relative; z-index: 1; background: var(--faq-bg); color: var(--faq-heading); border-top: 1px solid rgba(255,255,255,0.03);">
             <div style="max-width: 1200px; margin: 0 auto;">
                 <div style="text-align: center; margin-bottom: 40px;" data-reveal="true">
                     <div style="display: inline-block; padding: 5px 16px; border-radius: 100px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--faq-body); font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 20px;">FAQ</div>
-                    <h2 style="font-size: clamp(26px, 3.5vw, 32px); font-weight: 700; margin: 0 0 8px;">Frequently Asked Questions</h2>
-                    <p style="color: var(--faq-body); font-size: 14px; margin: 0;">We have collected the most frequently asked questions from our customers.</p>
+                    <h2 style="font-size: clamp(26px, 3.5vw, 32px); font-weight: 700; margin: 0 0 8px;">자주 묻는 질문</h2>
+                    <p style="color: var(--faq-body); font-size: 14px; margin: 0;">고객님들이 가장 많이 묻는 질문들을 모았습니다.</p>
                 </div>
 
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 40px;" data-reveal="true">
@@ -223,11 +223,11 @@
             </div>
         </section>
 
-        <section data-screen-label="Write an inquiry" style="padding: 96px 24px; position: relative; z-index: 1; background: var(--form-bg); color: var(--form-heading); border-top: 1px solid rgba(255,255,255,0.03);">
+        <section data-screen-label="문의 작성" style="padding: 96px 24px; position: relative; z-index: 1; background: var(--form-bg); color: var(--form-heading); border-top: 1px solid rgba(255,255,255,0.03);">
             <div style="max-width: 1200px; margin: 0 auto; padding-top: 36px">
                 <div style="text-align: center; margin-bottom: 48px;" data-reveal="true">
-                    <h2 style="font-size: clamp(26px, 3.5vw, 32px); font-weight: 700; margin: 0 0 10px;">Write an inquiry</h2>
-                    <p style="color: var(--form-body); font-size: 14px; margin: 0;">Please leave any questions you have, such as collaboration proposals or product inquiries, and we will respond quickly.</p>
+                    <h2 style="font-size: clamp(26px, 3.5vw, 32px); font-weight: 700; margin: 0 0 10px;">문의 작성</h2>
+                    <p style="color: var(--form-body); font-size: 14px; margin: 0;">협업 제안, 제품 문의 등 궁금하신 점을 남겨주시면 빠르게 답변해 드리겠습니다.</p>
                 </div>
 
                 <form style="background: var(--form-box); border-radius: 32px; padding: 48px; position: relative; overflow: hidden;" data-reveal="true" onSubmit="{{ onSubmit }}">
@@ -235,7 +235,7 @@
                         <div style="grid-column: 1 / -1;">
                             <label style="display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--form-body); margin-bottom: 8px;">Inquiry Type *</label>
                             <select class="cu-select" required="" style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px;">
-                                <option value="" disabled="" selected="">Please select the type of inquiry</option>
+                                <option value="" disabled="" selected="">문의 종류를 선택해 주세요</option>
                                 <sc-for list="{{ inquiryOptions }}" as="opt" hint-placeholder-count="6">
                                     <option value="{{ opt }}">{{ opt }}</option>
                                 </sc-for>
@@ -243,24 +243,24 @@
                         </div>
                         <div>
                             <label style="display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--form-body); margin-bottom: 8px;">Name *</label>
-                            <input class="cu-input" type="text" required="" placeholder="Name or contact person" style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box;">
+                            <input class="cu-input" type="text" required="" placeholder="이름 또는 담당자명" style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box;">
                         </div>
                         <div>
                             <label style="display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--form-body); margin-bottom: 8px;">Email / Contact *</label>
-                            <input class="cu-input" type="text" required="" placeholder="Email or phone number for our reply" style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box;">
+                            <input class="cu-input" type="text" required="" placeholder="회신받으실 이메일 또는 연락처" style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box;">
                         </div>
                         <div style="grid-column: 1 / -1;">
                             <label style="display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--form-body); margin-bottom: 8px;">Company (Optional)</label>
-                            <input class="cu-input" type="text" placeholder="Company or organization" style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box;">
+                            <input class="cu-input" type="text" placeholder="회사명 또는 소속" style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box;">
                         </div>
                         <div style="grid-column: 1 / -1;">
                             <label style="display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--form-body); margin-bottom: 8px;">Message *</label>
-                            <textarea class="cu-input" required="" rows="6" placeholder="Please describe your inquiry in detail." style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+                            <textarea class="cu-input" required="" rows="6" placeholder="문의하실 내용을 자세히 적어주세요." style="width: 100%; padding: 16px; border-radius: 12px; background: color-mix(in srgb, var(--form-heading) 6%, transparent); border: 1px solid color-mix(in srgb, var(--form-heading) 15%, transparent); color: var(--form-heading); font-size: 14px; box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
                         </div>
                     </div>
                     <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 1;">
-                        <p style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--form-body); margin: 0;"><i class="ph-fill ph-info" style="color: var(--accent-cyan);"></i>I agree to the collection and use of personal information and submit my inquiry.</p>
-                        <button type="submit" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: white; color: black; border: none; border-radius: 100px; font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap;">Send inquiry <i class="ph-bold ph-paper-plane-tilt"></i></button>
+                        <p style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--form-body); margin: 0;"><i class="ph-fill ph-info" style="color: var(--accent-cyan);"></i>개인정보 수집 및 이용에 동의하며 문의를 제출합니다.</p>
+                        <button type="submit" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: white; color: black; border: none; border-radius: 100px; font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap;">문의 보내기 <i class="ph-bold ph-paper-plane-tilt"></i></button>
                     </div>
                 </form>
             </div>
@@ -270,7 +270,7 @@
             <div class="ginovo-common-cta-bg"></div>
             <div class="ginovo-common-cta-content">
                 <p>Beyond Tech, Into Culture: The New Standard Powered by Data</p>
-                <h2>We open a culture of communication beyond the limits of technology with data.</h2>
+                <h2>데이터로 기술의 한계를 넘어 소통의 문화를 엽니다.</h2>
             </div>
         </section>
 
@@ -280,26 +280,26 @@
     <footer class="ginovo-footer" data-screen-label="푸터">
         <div class="ginovo-footer-container">
             <div>
-                <h4>Customer Center</h4>
-                <p class="ginovo-footer-phone">+82-62-716-0995</p>
-                <p class="ginovo-footer-muted">9:00 AM - 5:00 PM · Republic of Korea | Lunch time 12:00 - 13:00<br>Closed on weekends and public holidays</p>
+                <h4>고객센터</h4>
+                <p class="ginovo-footer-phone">062-716-0995</p>
+                <p class="ginovo-footer-muted">오전 9:00 - 오후 5:00 | 점심시간 12:00 - 13:00<br>주말 및 공휴일 휴무</p>
             </div>
             <div>
-                <h4>bank information</h4>
-                <p class="ginovo-footer-muted">Industrial Bank of Korea 65904714504019 Green Talk Co., Ltd.</p>
+                <h4>은행 정보</h4>
+                <p class="ginovo-footer-muted">기업은행 65904714504019 (주)그린토크</p>
             </div>
             <div>
-                <h4>Green Talk</h4>
+                <h4>그린토크</h4>
                 <ul class="ginovo-footer-links">
-                    <li><a href="./index.html#gt-sec-esg">Company Introduction</a></li>
-                    <li><a href="./index.html#gt-sec-history">Entrepreneurship Values</a></li>
-                    <li><a href="./certificates.html">design awards</a></li>
-                    <li><a href="./index.html#gt-sec-location">Directions</a></li>
+                    <li><a href="./index.html#gt-sec-esg">회사소개</a></li>
+                    <li><a href="./index.html#gt-sec-history">창업 가치</a></li>
+                    <li><a href="./certificates.html">디자인 어워드</a></li>
+                    <li><a href="./index.html#gt-sec-location">오시는 길</a></li>
                 </ul>
             </div>
             <div>
-                <h4>Business information</h4>
-                <p class="ginovo-footer-info">Headquarters: #404, 45 Jami-ro 6beon-gil, Buk-gu,<br>Gwangju-si, Jeollanam-do, Republic of Korea<br>Factory: Sebang Industry, 236 Sonjae-ro, Gwangsan-gu,<br>Gwangju-si, Jeollanam-do, Republic of Korea</p>
+                <h4>사업자 정보</h4>
+                <p class="ginovo-footer-info">상호명 : (주)그린토크 　 대표 : 손영국 　 주소 : 전남광주통합특별시 신호구 손재로 236 그린토크 　 사업자등록번호 : 603-87-02720</p>
             </div>
         </div>
         <div class="ginovo-footer-bottom">
@@ -311,19 +311,19 @@
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#34D399&quot;,&quot;options&quot;:[&quot;#42E8FF&quot;,&quot;#22D3A5&quot;,&quot;#34D399&quot;,&quot;#FFC233&quot;,&quot;#FF6B6B&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;전역 스타일&quot;},&quot;secondaryAccent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#210BBD&quot;,&quot;options&quot;:[&quot;#210BBD&quot;,&quot;#7C3AED&quot;,&quot;#0EA5E9&quot;,&quot;#DB2777&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;전역 스타일&quot;},&quot;bgTone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;true-black&quot;,&quot;options&quot;:[&quot;true-black&quot;,&quot;charcoal&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;전역 스타일&quot;},&quot;navStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;pill&quot;,&quot;options&quot;:[&quot;pill&quot;,&quot;flat&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;stickyHeader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;headerBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF1A&quot;,&quot;options&quot;:[&quot;#FFFFFF1A&quot;,&quot;#00000066&quot;,&quot;#000000CC&quot;,&quot;#FFFFFF&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;headerTextColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;options&quot;:[&quot;#FFFFFF&quot;,&quot;#000000&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;heroBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;히어로&quot;},&quot;heroHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;히어로&quot;},&quot;heroBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF99&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;히어로&quot;},&quot;faqBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#ffffff&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;faqHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;faqBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#a3a3a3&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;faqBoxColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#f2f2f2&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;formBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#ffffff&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Write an inquiry&quot;},&quot;formHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Write an inquiry&quot;},&quot;formBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#a3a3a3&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Write an inquiry&quot;},&quot;formBoxColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#f2f2f2&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Write an inquiry&quot;},&quot;ctaHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;마무리 CTA&quot;},&quot;ctaBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF99&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;마무리 CTA&quot;},&quot;footerBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;푸터&quot;},&quot;footerHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;푸터&quot;},&quot;footerBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF99&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;푸터&quot;},&quot;footerColumns&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:4,&quot;min&quot;:2,&quot;max&quot;:5,&quot;step&quot;:1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;푸터&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#34D399&quot;,&quot;options&quot;:[&quot;#42E8FF&quot;,&quot;#22D3A5&quot;,&quot;#34D399&quot;,&quot;#FFC233&quot;,&quot;#FF6B6B&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;전역 스타일&quot;},&quot;secondaryAccent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#210BBD&quot;,&quot;options&quot;:[&quot;#210BBD&quot;,&quot;#7C3AED&quot;,&quot;#0EA5E9&quot;,&quot;#DB2777&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;전역 스타일&quot;},&quot;bgTone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;true-black&quot;,&quot;options&quot;:[&quot;true-black&quot;,&quot;charcoal&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;전역 스타일&quot;},&quot;navStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;pill&quot;,&quot;options&quot;:[&quot;pill&quot;,&quot;flat&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;stickyHeader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;headerBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF1A&quot;,&quot;options&quot;:[&quot;#FFFFFF1A&quot;,&quot;#00000066&quot;,&quot;#000000CC&quot;,&quot;#FFFFFF&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;headerTextColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;options&quot;:[&quot;#FFFFFF&quot;,&quot;#000000&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;헤더&quot;},&quot;heroBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;히어로&quot;},&quot;heroHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;히어로&quot;},&quot;heroBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF99&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;히어로&quot;},&quot;faqBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#ffffff&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;faqHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;faqBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#a3a3a3&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;faqBoxColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#f2f2f2&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;FAQ&quot;},&quot;formBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#ffffff&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;문의 작성&quot;},&quot;formHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;문의 작성&quot;},&quot;formBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#a3a3a3&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;문의 작성&quot;},&quot;formBoxColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#f2f2f2&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;문의 작성&quot;},&quot;ctaHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;마무리 CTA&quot;},&quot;ctaBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF99&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;마무리 CTA&quot;},&quot;footerBgColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#000000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;푸터&quot;},&quot;footerHeadingColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;푸터&quot;},&quot;footerBodyColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFFFF99&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;푸터&quot;},&quot;footerColumns&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:4,&quot;min&quot;:2,&quot;max&quot;:5,&quot;step&quot;:1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;푸터&quot;}}">
 class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.state = { openNav: null, faqFilter: 'all' };
     this.rootRef = React.createRef();
     this.faqData = [
-      { cat: 'Product', q: 'How does the Smart Golf Ball collect data?', a: 'The Smart Golf Ball contains high-precision motion sensors. It detects speed, direction, impact angle, and other physical data in real time, sends it to the app via Bluetooth, and presents it as visual feedback.' },
-      { cat: 'Product', q: 'How is the GINOVO slope mat different from a conventional putting mat?', a: 'Unlike a typical flat mat, the GINOVO slope mat can physically recreate gradients similar to a real green. It also visualizes cup target lines on the mat for more realistic practice.' },
-      { cat: 'Product', q: 'Is the app connection required?', a: 'You can practice slope putting with the mat alone, but a Bluetooth connection to the dedicated app is required to view Smart Golf Ball feedback such as accuracy, tempo, and face angle.' },
-      { cat: 'Partnership', q: 'What is the process for joint R&D or a technology partnership?', a: 'Use the Write an Inquiry form below to briefly introduce your company and partnership goals. The responsible team will review your request and propose a meeting within three business days.' },
-      { cat: 'Product', q: 'What are the battery life and charging method of the Smart Golf Ball?', a: 'A dedicated wireless charging cradle is provided. A full charge supports approximately eight hours of continuous use, and its efficient standby mode is sufficient for a typical practice session on a single daily charge.' },
-      { cat: 'Support', q: 'What are the warranty period and service policy?', a: 'We provide a one-year limited warranty from the date of purchase, excluding damage caused by the customer. Please contact Customer Support for prompt assistance with sensor, charging, or other device defects.' },
+      { cat: '제품', q: '스마트 골프 볼의 데이터 수집은 어떻게 이루어지나요?', a: '스마트 골프 볼 내부에는 초정밀 모션 센서가 탑재되어 있습니다. 퍼팅 시 발생하는 속도, 방향, 타격 각도 등의 물리적 데이터를 실시간으로 감지해 블루투스로 앱에 전송하고, 앱은 이를 시각화된 피드백으로 제공합니다.' },
+      { cat: '제품', q: '기존 퍼팅 매트와 지노버 경사 매트의 차이점은 무엇인가요?', a: '일반적인 평면 매트와 달리, 지노버 경사 매트는 실제 그린과 유사한 경사도를 물리적으로 구현할 수 있습니다. 또한 매트 위에 홀컵 타겟 라인을 시각화해 실전 감각에 가까운 훈련이 가능합니다.' },
+      { cat: '제품', q: '앱 연동은 필수인가요?', a: '매트 자체만으로도 경사 퍼팅 연습이 가능하지만, 스마트 골프 볼의 데이터 피드백(정확도, 템포, 페이스 앵글 등)을 확인하기 위해서는 전용 앱과의 블루투스 연동이 필요합니다.' },
+      { cat: '협업', q: '공동 R&D 또는 기술 제휴 절차는 어떻게 되나요?', a: '하단의 \'문의 작성\' 폼을 통해 귀사의 소개와 제휴 목적을 간략히 남겨주시면, 담당 부서에서 검토 후 영업일 기준 3일 이내에 미팅을 제안드립니다.' },
+      { cat: '제품', q: '스마트 골프 볼의 배터리 수명과 충전 방식은요?', a: '전용 무선 충전 크래들을 제공하며, 완충 시 연속 사용 기준으로 약 8시간 사용이 가능합니다. 대기 모드 효율이 높아 일반적인 연습 세션에는 하루 충전으로 충분합니다.' },
+      { cat: 'A/S', q: 'A/S 보증 기간 및 정책은 어떻게 되나요?', a: '제품 구매일로부터 1년간 무상 A/S를 지원합니다 (단, 소비자 과실로 인한 파손 제외). 센서 불량이나 충전 불량 등 기기 결함 발생 시 고객센터로 문의해 주시면 신속히 안내해 드립니다.' },
     ];
   }
 
@@ -452,8 +452,8 @@ class Component extends DCLogic {
     const openNav = this.state.openNav;
     const faqFilter = this.state.faqFilter;
 
-    const filterDefs = ['all', 'Product', 'Partnership', 'Support'];
-    const filterLabels = { all: 'All', Product: 'Product', Partnership: 'Partnership', Support: 'Support' };
+    const filterDefs = ['all', '제품', '협업', 'A/S'];
+    const filterLabels = { all: '전체', '제품': '제품', '협업': '협업', 'A/S': 'A/S' };
     const faqFilters = filterDefs.map((key) => ({
       label: filterLabels[key],
       onClick: () => this.setState({ faqFilter: key }),
@@ -474,8 +474,8 @@ class Component extends DCLogic {
       locationBg, locationHeading, locationBody, locationBox,
       ctaHeading, ctaBody,
       footerBg, footerHeading, footerBody, footerCols,
-      inquiryTags: ['Product Inquiry', 'Technology Partnership', 'Supply Inquiry', 'Investment & Partnership', 'Joint R&D', 'Exhibition & Events'],
-      inquiryOptions: ['Product Inquiry', 'Technology Partnership', 'Supply Inquiry', 'Investment & Partnership', 'Joint R&D', 'Exhibition & Events'],
+      inquiryTags: ['제품 문의', '기술 제휴', '납품 문의', '투자·협업 문의', '공동 R&D 문의', '전시·행사 문의'],
+      inquiryOptions: ['제품 문의', '기술 제휴', '납품 문의', '투자·협업 문의', '공동 R&D 문의', '전시·행사 문의'],
       faqFilters,
       visibleFaqItems,
       onSubmit: (e) => { e.preventDefault(); },

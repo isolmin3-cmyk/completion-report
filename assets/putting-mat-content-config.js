@@ -1,22 +1,22 @@
-/* Slope Putting Mat 제품 비교 카드의 기본 콘텐츠와 관리자 편집 연결 */
+/* 경사 퍼팅매트 제품 비교 카드의 기본 콘텐츠와 관리자 편집 연결 */
 window.PUTTING_MAT_COMPARISON_DEFAULTS = [
   {
     image: './assets/img-016.png',
     title: '90cm',
-    subtitle: 'Slope Putting Mat / Representative product / Slope on both sides',
-    items: ['Various attack line training', 'Uphill/Downhill/Hook/Slice', 'Environment most similar to the field']
+    subtitle: '경사 퍼팅매트 / 대표 제품 / 양쪽 경사',
+    items: ['다양한 공략 라인 훈련', '오르막/내리막/훅/슬라이스', '필드와 가장 유사한 환경']
   },
   {
     image: './assets/img-014.png',
     title: '70cm',
-    subtitle: 'Sloping putting mat / game type training / slope + game combination',
-    items: ['Putting game method applied', 'Practice using slope sections', 'Solo & Group Play']
+    subtitle: '슬로핑 퍼팅매트 / 게임형 훈련 / 경사+게임 결합',
+    items: ['퍼팅 게임 방식 적용', '경사 구간 활용 연습', '솔로 & 그룹 플레이']
   },
   {
     image: './assets/img-015.png',
     title: '60cm',
-    subtitle: 'Slope Putting Mat / Compact type / Slope on one side',
-    items: ['Suitable for narrow spaces', 'Basic putting routine training', 'Use of personal space, office, etc.']
+    subtitle: '경사 퍼팅매트 / 컴팩트형 / 한쪽 경사',
+    items: ['좁은 공간에 적합', '기본 퍼팅 루틴 훈련', '개인 공간, 사무실 등 활용']
   }
 ];
 
