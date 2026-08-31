@@ -62,6 +62,9 @@
     document.documentElement.lang = 'ko';
     if (titleMap[document.title]) document.title = titleMap[document.title];
     translateNode(document.body);
+    document.querySelectorAll('.source-home-footer-business').forEach((footerBusiness) => {
+      footerBusiness.innerHTML = '<h4>사업자 정보</h4><p>본사: 광주광역시 북구 자미로6번길 45, 404호</p><p>공장: 광주광역시 광산구 손재로 236, 세방산업</p>';
+    });
     const page = location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('a').forEach((a) => {
       const label = a.textContent.trim();
